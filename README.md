@@ -2,8 +2,6 @@
 
 Emojis for Go 😄 🐢 🚀
 
-## Getting started
-
 ## Installation
 
 ``go get github.com/hackebrot/turtle``

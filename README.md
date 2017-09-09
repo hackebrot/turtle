@@ -1,6 +1,139 @@
 # turtle
 
-Emojis for Go
+Emojis for Go 😄 🐢 🚀
+
+## Getting started
+
+## Installation
+
+``go get github.com/hackebrot/turtle``
+
+## Usage
+
+### Emoji lookup
+
+``turtle.Emojis`` contains all the available emojis and you can look them up by
+their name.
+
+```go
+package main
+
+import (
+	"fmt"
+	"os"
+
+	"github.com/hackebrot/turtle"
+)
+
+func main() {
+	name := "turtle"
+	emoji, ok := turtle.Emojis[name]
+
+	if !ok {
+		fmt.Fprintf(os.Stderr, "no emoji found for name: %v\n", name)
+		os.Exit(1)
+	}
+
+	fmt.Printf("%s: %s\n", name, emoji)
+}
+```
+
+```text
+turtle: 🐢
+```
+
+### Search
+
+Use ``Search()`` to find all emojis with a name that contains the search string.
+
+```go
+package main
+
+import (
+	"fmt"
+	"os"
+
+	"github.com/hackebrot/turtle"
+)
+
+func main() {
+	s := "basketball"
+	emojis := turtle.Search(s)
+
+	if emojis == nil {
+		fmt.Fprintf(os.Stderr, "no emojis found for search: %v\n", s)
+		os.Exit(1)
+	}
+
+	fmt.Printf("%s: %s\n", s, emojis)
+}
+```
+
+```text
+basketball: [🏀 ⛹ ⛹️]
+```
+
+### Category
+
+Use ``Category()`` to find all emojis of the specified category.
+
+```go
+package main
+
+import (
+	"fmt"
+	"os"
+
+	"github.com/hackebrot/turtle"
+)
+
+func main() {
+	c := "travel_and_places"
+	emojis := turtle.Category(c)
+
+	if emojis == nil {
+		fmt.Fprintf(os.Stderr, "no emojis found for category: %v\n", c)
+		os.Exit(1)
+	}
+
+	fmt.Printf("%s: %s\n", c, emojis[:3])
+}
+```
+
+```text
+travel_and_places: [🚡 ✈️ 🚑 ]
+```
+
+### Keyword
+
+Use ``Keyword()`` to find all emojis by a keyword.
+
+```go
+package main
+
+import (
+	"fmt"
+	"os"
+
+	"github.com/hackebrot/turtle"
+)
+
+func main() {
+	k := "happy"
+	emojis := turtle.Keyword(k)
+
+	if emojis == nil {
+		fmt.Fprintf(os.Stderr, "no emoji found for keyword: %v\n", k)
+		os.Exit(1)
+	}
+
+	fmt.Printf("%s: %s\n", k, emojis[:4])
+}
+```
+
+```text
+happy: [😊 😁 😀 😂 ]
+```
 
 ## License
 

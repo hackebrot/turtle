@@ -2,10 +2,10 @@ package turtle
 
 // Emoji holds info about an emoji character
 type Emoji struct {
-	Name     string
-	Category string
-	Char     string
-	Keywords []string
+	Name     string   `json:"name" toml:"name"`
+	Category string   `json:"category" toml:"category"`
+	Char     string   `json:"char" toml:"char"`
+	Keywords []string `json:"keywords" toml:"keywords"`
 }
 
 // String implementation for Emoji

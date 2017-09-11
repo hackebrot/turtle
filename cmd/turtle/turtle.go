@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/hackebrot/turtle"
 	"github.com/spf13/cobra"
@@ -10,8 +11,8 @@ import (
 var (
 	cmdTurtle = &cobra.Command{
 		Use:   "turtle",
-		Short: "Print the emoji with name",
-		Long:  "Print the emoji with name",
+		Short: "Print the unicode character for a given emoji name",
+		Long:  "Print the unicode character for a given emoji name",
 		RunE:  runTurtle,
 		Args: func(cmd *cobra.Command, args []string) error {
 			if len(args) == 0 {
@@ -23,6 +24,9 @@ var (
 )
 
 func init() {
+	cmdTurtle.AddCommand(cmdCategory)
+	cmdTurtle.AddCommand(cmdKeyword)
+	cmdTurtle.AddCommand(cmdSearch)
 	cmdTurtle.AddCommand(cmdVersion)
 }
 
@@ -35,6 +39,7 @@ func runTurtle(cmd *cobra.Command, args []string) error {
 		return fmt.Errorf("cannot find emoji with name %q", name)
 	}
 
-	fmt.Printf("%s\n", e)
-	return nil
+	j := NewJSONWriter(os.Stdout)
+
+	return j.WriteEmoji(e)
 }

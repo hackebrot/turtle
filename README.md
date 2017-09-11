@@ -55,7 +55,7 @@ import (
 )
 
 func main() {
-	s := "basketball"
+	s := "computer"
 	emojis := turtle.Search(s)
 
 	if emojis == nil {
@@ -68,7 +68,7 @@ func main() {
 ```
 
 ```text
-basketball: [🏀 ⛹ ⛹️]
+computer: [💻 🖱 🖥 ]
 ```
 
 ### Category

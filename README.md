@@ -10,8 +10,8 @@ Emojis for Go 😄 🐢 🚀
 
 ### Emoji lookup
 
-``turtle.Emojis`` contains all the available emojis and you can look them up by
-their name.
+``turtle.Emojis`` is a map which contains all emojis available in **turtle**.
+You can use it to look up emoji by their name.
 
 ```go
 package main

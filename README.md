@@ -94,7 +94,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Printf("%s: %s\n", c, emojis[:3])
+	fmt.Printf("%s: %s\n", c, emojis)
 }
 ```
 
@@ -125,7 +125,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Printf("%s: %s\n", k, emojis[:4])
+	fmt.Printf("%s: %s\n", k, emojis)
 }
 ```
 

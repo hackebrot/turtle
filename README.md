@@ -32,12 +32,18 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Printf("%s: %s\n", name, emoji)
+	fmt.Printf("Name: %q\n", emoji.Name)
+	fmt.Printf("Char: %s\n", emoji.Char)
+	fmt.Printf("Category: %q\n", emoji.Category)
+	fmt.Printf("Keywords: %q\n", emoji.Keywords)
 }
 ```
 
 ```text
-turtle: 🐢
+Name: "turtle"
+Char: 🐢
+Category: "animals_and_nature"
+Keywords: ["animal" "slow" "nature" "tortoise"]
 ```
 
 ### Search

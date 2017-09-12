@@ -138,6 +138,11 @@ happy: [😊 😁 😀 😂 ]
 If you encounter any problems, please [file an issue][issues] along with a
 detailed description.
 
+## Contributing
+
+Contributions are welcome, and they are greatly appreciated! Every little bit
+helps, and credit will always be given. 
+
 ## License
 
 Distributed under the terms of the [MIT license][mit], turtle is free and

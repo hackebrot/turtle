@@ -133,9 +133,15 @@ func main() {
 happy: [😊 😁 😀 😂 ]
 ```
 
+## Issues
+
+If you encounter any problems, please [file an issue][issues] along with a
+detailed description.
+
 ## License
 
 Distributed under the terms of the [MIT license][mit], turtle is free and
 open source software.
 
+[issues]: https://github.com/hackebrot/turtle/issues
 [mit]: /LICENSE

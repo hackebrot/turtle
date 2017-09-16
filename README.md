@@ -4,7 +4,19 @@ Emojis for Go 😄 🐢 🚀
 
 ## Installation
 
+### Library
+
+To install the **turtle** library run:
+
 ``go get github.com/hackebrot/turtle``
+
+### CLI app
+
+If you would also like to use the **turtle** CLI app run:
+
+``go get github.com/hackebrot/turtle/cmd/turtle``
+
+See the [turtle CLI][cli] README for more information.
 
 ## Usage
 
@@ -156,3 +168,4 @@ open source software.
 
 [issues]: https://github.com/hackebrot/turtle/issues
 [mit]: /LICENSE
+[cli]: /cmd/turtle/README.md

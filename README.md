@@ -153,7 +153,7 @@ happy: [😊 😁 😀 😂 ]
 
 ## Issues
 
-If you encounter any problems, please [file an issue][issues] along with a
+If you encounter any problems, please [file an issue][new-issue] along with a
 detailed description.
 
 ## Contributing
@@ -166,6 +166,6 @@ helps, and credit will always be given.
 Distributed under the terms of the [MIT license][mit], turtle is free and
 open source software.
 
-[issues]: https://github.com/hackebrot/turtle/issues
+[new-issue]: https://github.com/hackebrot/turtle/issues/new
 [mit]: /LICENSE
 [cli]: /cmd/turtle/README.md

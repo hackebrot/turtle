@@ -15,8 +15,8 @@ var (
 		Long:  "Print all emojis with the keyword",
 		RunE:  runKeyword,
 		Args: func(cmd *cobra.Command, args []string) error {
-			if len(args) == 0 {
-				return fmt.Errorf("require keyword")
+			if len(args) != 1 {
+				return fmt.Errorf("require one keyword")
 			}
 			return nil
 		},

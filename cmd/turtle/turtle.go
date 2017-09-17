@@ -18,8 +18,8 @@ var (
 		Long:  "Print the unicode character for a given emoji name",
 		RunE:  runTurtle,
 		Args: func(cmd *cobra.Command, args []string) error {
-			if len(args) == 0 {
-				return fmt.Errorf("require emoji name")
+			if len(args) != 1 {
+				return fmt.Errorf("require one emoji name")
 			}
 			return nil
 		},

@@ -15,8 +15,8 @@ var (
 		Long:  "Print all emojis of the category",
 		RunE:  runCategory,
 		Args: func(cmd *cobra.Command, args []string) error {
-			if len(args) == 0 {
-				return fmt.Errorf("require category")
+			if len(args) != 1 {
+				return fmt.Errorf("require one category")
 			}
 			return nil
 		},

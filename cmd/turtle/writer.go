@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"io"
 
 	"github.com/hackebrot/turtle"
@@ -13,8 +14,24 @@ type JSONWriter struct {
 }
 
 // NewJSONWriter creates a new JSONWriter
-func NewJSONWriter(w io.Writer) *JSONWriter {
-	return &JSONWriter{e: json.NewEncoder(w)}
+func NewJSONWriter(w io.Writer, options ...func(*JSONWriter) error) (*JSONWriter, error) {
+	j := &JSONWriter{e: json.NewEncoder(w)}
+
+	for _, option := range options {
+		if err := option(j); err != nil {
+			return nil, fmt.Errorf("error applying option: %v", err)
+		}
+	}
+
+	return j, nil
+}
+
+// WithIndent sets an indent on  adds a separator to a thread
+func WithIndent(prefix, indent string) func(*JSONWriter) error {
+	return func(j *JSONWriter) error {
+		j.e.SetIndent(prefix, indent)
+		return nil
+	}
 }
 
 // WriteEmoji to an io.Writer

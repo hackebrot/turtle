@@ -31,7 +31,12 @@ func runKeyword(cmd *cobra.Command, args []string) error {
 	if emojis == nil {
 		return fmt.Errorf("cannot find emojis for keyword %q", k)
 	}
-	j := NewJSONWriter(os.Stdout)
+
+	j, err := NewJSONWriter(os.Stdout, WithIndent(prefix, indent))
+
+	if err != nil {
+		return fmt.Errorf("error creating JSONWriter: %v", err)
+	}
 
 	return j.WriteEmojis(emojis)
 }

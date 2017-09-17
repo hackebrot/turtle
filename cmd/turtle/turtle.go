@@ -9,6 +9,9 @@ import (
 )
 
 var (
+	indent string
+	prefix string
+
 	cmdTurtle = &cobra.Command{
 		Use:   "turtle",
 		Short: "Print the unicode character for a given emoji name",
@@ -28,6 +31,9 @@ func init() {
 	cmdTurtle.AddCommand(cmdKeyword)
 	cmdTurtle.AddCommand(cmdSearch)
 	cmdTurtle.AddCommand(cmdVersion)
+
+	cmdTurtle.PersistentFlags().StringVarP(&indent, "indent", "i", "", "indent for JSON output")
+	cmdTurtle.PersistentFlags().StringVarP(&prefix, "prefix", "p", "", "prefix for JSON output")
 }
 
 func runTurtle(cmd *cobra.Command, args []string) error {
@@ -39,7 +45,11 @@ func runTurtle(cmd *cobra.Command, args []string) error {
 		return fmt.Errorf("cannot find emoji with name %q", name)
 	}
 
-	j := NewJSONWriter(os.Stdout)
+	j, err := NewJSONWriter(os.Stdout, WithIndent(prefix, indent))
+
+	if err != nil {
+		return fmt.Errorf("error creating JSONWriter: %v", err)
+	}
 
 	return j.WriteEmoji(e)
 }

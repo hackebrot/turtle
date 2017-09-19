@@ -1,7 +1,7 @@
 package turtle
 
 // Version of the turtle library
-const Version = "v0.1.0-dev"
+const Version = "v0.1.0"
 
 // Emojis maps a name to an Emoji
 var Emojis = make(map[string]*Emoji)

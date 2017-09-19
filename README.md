@@ -2,7 +2,6 @@
 
 [![GoDoc Reference][godoc_badge]][godoc]
 [![Build Status][travis_badge]][travis]
-[![Report Card][report_card_badge]][report_card]
 
 Emojis for Go 😄 🐢 🚀
 

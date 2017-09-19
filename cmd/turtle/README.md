@@ -9,7 +9,7 @@ CLI for the [turtle library][library] 😄 🐢 💻
 ## Usage
 
 ```text
-Print the unicode character for a given emoji name
+Print the emoji for a given name identifier
 
 Usage:
   turtle [flags]

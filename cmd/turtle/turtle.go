@@ -14,8 +14,8 @@ var (
 
 	cmdTurtle = &cobra.Command{
 		Use:   "turtle",
-		Short: "Print the unicode character for a given emoji name",
-		Long:  "Print the unicode character for a given emoji name",
+		Short: "Print the emoji with the specified name identifier",
+		Long:  "Print the emoji with the specified name identifier",
 		RunE:  runTurtle,
 		Args: func(cmd *cobra.Command, args []string) error {
 			if len(args) != 1 {

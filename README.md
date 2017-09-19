@@ -1,5 +1,8 @@
 # turtle
 
+[![GoDoc Reference][godoc_badge]][godoc]
+[![Report Card][report_card_badge]][report_card]
+
 Emojis for Go 😄 🐢 🚀
 
 ## Installation
@@ -166,6 +169,11 @@ helps, and credit will always be given.
 Distributed under the terms of the [MIT license][mit], turtle is free and
 open source software.
 
-[new-issue]: https://github.com/hackebrot/turtle/issues/new
-[mit]: /LICENSE
 [cli]: /cmd/turtle/README.md
+[godoc]: https://godoc.org/github.com/hackebrot/turtle (See GoDoc Reference)
+[godoc_badge]: https://img.shields.io/badge/go-documentation-blue.svg?style=flat
+[mit]: /LICENSE
+[new-issue]: https://github.com/hackebrot/turtle/issues/new
+[report_card]: https://goreportcard.com/report/github.com/hackebrot/turtle (See Go Report Card)
+[report_card_badge]: https://goreportcard.com/badge/github.com/hackebrot/turtle
+

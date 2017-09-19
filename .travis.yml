@@ -1,0 +1,23 @@
+language: go
+
+sudo: false
+
+os:
+  - linux
+
+go:
+  - 1.7
+  - 1.8
+  - 1.9
+  - tip
+
+matrix:
+  allow_failures:
+    - go: tip
+  fast_finish: true
+
+install:
+  - go get -t ./...
+
+script:
+  - go test ./...

@@ -13,7 +13,7 @@ func (e Emoji) String() string {
 	return e.Char
 }
 
-// emojis holds all avaiable Emoji
+// emojis holds all available Emoji
 var emojis = []*Emoji{
 	{
 		Name:     "+1",
@@ -3985,7 +3985,7 @@ var emojis = []*Emoji{
 		Name:     "hotel",
 		Category: "travel_and_places",
 		Char:     "🏨",
-		Keywords: []string{"building", "accomodation", "checkin"},
+		Keywords: []string{"building", "accommodation", "checkin"},
 	},
 	{
 		Name:     "house",

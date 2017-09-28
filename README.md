@@ -154,6 +154,15 @@ func main() {
 happy: [😊 😁 😀 😂 ]
 ```
 
+## Emojis
+
+Emoji names, categories and keywords are based on the fantastic
+[muan/emojilib][emojilib] keyword library 📖
+
+At this point, the **turtle** project supports the emojis that are also
+available on GitHub. See the [GitHub REST API documentation][github-api] for
+more information.
+
 ## Issues
 
 If you encounter any problems, please [file an issue][new-issue] along with a
@@ -170,6 +179,8 @@ Distributed under the terms of the [MIT license][mit], turtle is free and
 open source software.
 
 [cli]: /cmd/turtle/README.md
+[emojilib]: https://github.com/muan/emojilib
+[github-api]: https://developer.github.com/v3/emojis/
 [godoc]: https://godoc.org/github.com/hackebrot/turtle (See GoDoc Reference)
 [godoc_badge]: https://img.shields.io/badge/go-documentation-blue.svg?style=flat
 [mit]: /LICENSE

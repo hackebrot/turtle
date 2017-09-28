@@ -11,13 +11,13 @@ Emojis for Go 😄 🐢 🚀
 
 To install the **turtle** library run:
 
-``go get github.com/hackebrot/turtle``
+``$ go get github.com/hackebrot/turtle``
 
 ### CLI app
 
 If you would also like to use the **turtle** CLI app run:
 
-``go get github.com/hackebrot/turtle/cmd/turtle``
+``$ go get github.com/hackebrot/turtle/cmd/turtle``
 
 See the [turtle CLI][cli] README for more information.
 

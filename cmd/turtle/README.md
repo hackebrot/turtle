@@ -187,4 +187,26 @@ $ turtle -i "  " keyword happy
 ]
 ```
 
+### List names, categories, keywords
+
+Use the ``list`` subcommand to get information about emoji names, categories,
+and keywords.
+
+```bash
+$ turtle -i "  " list categories
+```
+
+```json
+[
+    "activity",
+    "animals_and_nature",
+    "flags",
+    "food_and_drink",
+    "objects",
+    "people",
+    "symbols",
+    "travel_and_places"
+]
+```
+
 [library]: ../../README.md

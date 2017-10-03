@@ -9,7 +9,7 @@ CLI for the [turtle library][library] 😄 🐢 💻
 ## Usage
 
 ```text
-Print the emoji for a given name identifier
+Print the emoji with the specified name identifier
 
 Usage:
   turtle [flags]
@@ -19,6 +19,7 @@ Available Commands:
   category    Print all emojis of the category
   help        Help about any command
   keyword     Print all emojis with the keyword
+  list        Print a list of values from the turtle library
   search      Print emojis with a name that contains the search string
   version     Print the version number of turtle
 

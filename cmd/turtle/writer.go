@@ -34,12 +34,17 @@ func WithIndent(prefix, indent string) func(*JSONWriter) error {
 	}
 }
 
-// WriteEmoji to an io.Writer
+// WriteEmoji to an io.Writer as JSON
 func (j *JSONWriter) WriteEmoji(emoji *turtle.Emoji) error {
 	return j.e.Encode(emoji)
 }
 
-// WriteEmojis to an io.Writer
+// WriteEmojis to an io.Writer as JSON
 func (j *JSONWriter) WriteEmojis(emojis []*turtle.Emoji) error {
 	return j.e.Encode(emojis)
+}
+
+// Write a value to an io.Writer as JSON
+func (j *JSONWriter) Write(v interface{}) error {
+	return j.e.Encode(v)
 }

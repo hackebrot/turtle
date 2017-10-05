@@ -50,14 +50,21 @@ func init() {
 // addIfUnique adds strings to a given slice, if it
 // cannot be found in the slice and then sorts the slice
 func addIfUnique(r []string, sItems ...string) []string {
+
+	// The slice must be sorted in ascending order
+	// before we use it in sort.SearchStrings
+	sort.Strings(r)
+
 	for _, s := range sItems {
 		i := sort.SearchStrings(r, s)
 
 		if i >= len(r) || r[i] != s {
+			// r does not contain s, add it and sort
 			r = append(r, s)
 			sort.Strings(r)
 		}
 	}
+
 	return r
 }
 

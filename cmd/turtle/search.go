@@ -32,11 +32,16 @@ func runSearch(cmd *cobra.Command, args []string) error {
 		return fmt.Errorf("cannot find emojis for search %q", s)
 	}
 
-	j, err := NewJSONWriter(os.Stdout, WithIndent(prefix, indent))
-
+	var err error
+	var w Writer
+	if plain {
+		w, err = NewPlainWriter(os.Stdout)
+	} else {
+		w, err = NewJSONWriter(os.Stdout, WithIndent(prefix, indent))
+	}
 	if err != nil {
-		return fmt.Errorf("error creating JSONWriter: %v", err)
+		return fmt.Errorf("error creating Writer: %v", err)
 	}
 
-	return j.WriteEmojis(emojis)
+	return w.WriteEmojis(emojis)
 }

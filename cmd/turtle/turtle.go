@@ -11,6 +11,7 @@ import (
 var (
 	indent string
 	prefix string
+	plain  bool
 
 	cmdTurtle = &cobra.Command{
 		Use:   "turtle",
@@ -32,9 +33,11 @@ func init() {
 	cmdTurtle.AddCommand(cmdSearch)
 	cmdTurtle.AddCommand(cmdVersion)
 	cmdTurtle.AddCommand(cmdList)
+	cmdTurtle.AddCommand(cmdRandom)
 
 	cmdTurtle.PersistentFlags().StringVarP(&indent, "indent", "i", "", "indent for JSON output")
 	cmdTurtle.PersistentFlags().StringVarP(&prefix, "prefix", "p", "", "prefix for JSON output")
+	cmdTurtle.PersistentFlags().BoolVarP(&plain, "plain", "c", false, "plaintext output")
 }
 
 func runTurtle(cmd *cobra.Command, args []string) error {
@@ -46,11 +49,16 @@ func runTurtle(cmd *cobra.Command, args []string) error {
 		return fmt.Errorf("cannot find emoji with name %q", name)
 	}
 
-	j, err := NewJSONWriter(os.Stdout, WithIndent(prefix, indent))
-
+	var err error
+	var w Writer
+	if plain {
+		w, err = NewPlainWriter(os.Stdout)
+	} else {
+		w, err = NewJSONWriter(os.Stdout, WithIndent(prefix, indent))
+	}
 	if err != nil {
-		return fmt.Errorf("error creating JSONWriter: %v", err)
+		return fmt.Errorf("error creating Writer: %v", err)
 	}
 
-	return j.WriteEmoji(e)
+	return w.WriteEmoji(e)
 }

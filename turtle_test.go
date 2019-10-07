@@ -74,6 +74,37 @@ func Test_category(t *testing.T) {
 	}
 }
 
+func Test_name(t *testing.T) {
+	tests := []struct {
+		name string
+		char string
+		want *Emoji
+	}{
+		{
+			name: "no matches",
+			char: "",
+			want: nil,
+		},
+		{
+			name: "single match",
+			char: "☕",
+			want: &Emoji{
+					Name:     "coffee",
+					Category: "food_and_drink",
+					Char:     "☕",
+					Keywords: []string{"beverage", "caffeine", "latte", "espresso"},
+				},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := name(testEmojis, tt.char); !cmp.Equal(got, tt.want) {
+				t.Errorf("name() = %v, want %v", repr.Repr(got), repr.Repr(tt.want))
+			}
+		})
+	}
+}
+
 func Test_keyword(t *testing.T) {
 	tests := []struct {
 		name string

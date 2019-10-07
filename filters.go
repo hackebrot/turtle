@@ -20,6 +20,17 @@ func category(emojis []*Emoji, c string) []*Emoji {
 	})
 }
 
+// name returns the name based on emoji
+func name(emojis []*Emoji, n string) *Emoji {
+	results := filter(emojis, func(e *Emoji) bool {
+		return e.Char == n
+	})
+	if len(results) > 0 {
+		return results[0]
+	}
+	return nil
+}
+
 // keyword filters a slice of Emoji by Keywords
 func keyword(emojis []*Emoji, k string) []*Emoji {
 	return filter(emojis, func(e *Emoji) bool {

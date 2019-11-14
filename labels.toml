@@ -1,0 +1,49 @@
+[bug]
+color = "ea707a"
+name = "bug"
+description = "Bugs and problems with turtle"
+
+["code quality"]
+color = "fcc4db"
+name = "code quality"
+description = "Tasks related to linting, coding style"
+
+[dependencies]
+color = "43a2b7"
+name = "dependencies"
+description = "Tasks related to managing dependencies"
+
+[discussion]
+color = "8f7ad6"
+name = "discussion"
+description = "Issues for discussing ideas for features"
+
+["do not merge"]
+color = "e069aa"
+name = "do not merge"
+description = "Pull requests which must not be merged"
+
+[docs]
+color = "2abf88"
+name = "docs"
+description = "Tasks to write and update documentation"
+
+[enhancement]
+color = "81c4e2"
+name = "enhancement"
+description = "New feature or enhancement for turtle"
+
+["good first issue"]
+color = "b6f4a1"
+name = "good first issue"
+description = "Tasks for new contributors to turtle"
+
+[misc]
+color = "f9d03b"
+name = "misc"
+description = "Tasks that don't fit any of the other categories"
+
+[project]
+color = "bbd1f7"
+name = "project"
+description = "Tasks related to managing turtle"

@@ -1,7 +1,6 @@
 # turtle
 
 [![GoDoc Reference][godoc_badge]][godoc]
-[![Build Status][travis_badge]][travis]
 
 Emojis for Go 😄 🐢 🚀
 
@@ -187,6 +186,3 @@ open source software.
 [new-issue]: https://github.com/hackebrot/turtle/issues/new
 [report_card]: https://goreportcard.com/report/github.com/hackebrot/turtle (See Go Report Card)
 [report_card_badge]: https://goreportcard.com/badge/github.com/hackebrot/turtle
-[travis]: https://travis-ci.org/hackebrot/turtle (See Build Status on Travis CI)
-[travis_badge]: https://img.shields.io/travis/hackebrot/turtle.svg?style=flat
-

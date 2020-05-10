@@ -4,7 +4,7 @@ CLI for the [turtle library][library] 😄 🐢 💻
 
 ## Installation
 
-``$ go get github.com/hackebrot/turtle/cmd/turtle``
+``go get github.com/hackebrot/turtle/cmd/turtle``
 
 ## Usage
 
@@ -34,7 +34,7 @@ Use "turtle [command] --help" for more information about a command.
 ### Emoji lookup
 
 ```bash
-$ turtle -i "  " rocket
+turtle -i "  " rocket
 ```
 
 ```json
@@ -57,7 +57,7 @@ $ turtle -i "  " rocket
 ### Search
 
 ```bash
-$ turtle -i "  " search computer
+turtle -i "  " search computer
 ```
 
 ```json
@@ -98,7 +98,7 @@ $ turtle -i "  " search computer
 ### Category
 
 ```bash
-$ turtle -i "  " category travel_and_places
+turtle -i "  " category travel_and_places
 ```
 
 ```json
@@ -140,7 +140,7 @@ $ turtle -i "  " category travel_and_places
 ### Keyword
 
 ```bash
-$ turtle -i "  " keyword happy
+turtle -i "  " keyword happy
 ```
 
 ```json
@@ -194,7 +194,7 @@ Use the ``list`` subcommand to get information about emoji names, categories,
 and keywords.
 
 ```bash
-$ turtle -i "  " list categories
+turtle -i "  " list categories
 ```
 
 ```json

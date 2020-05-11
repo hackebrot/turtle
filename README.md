@@ -1,8 +1,10 @@
 # turtle
 
-[![GoDoc Reference][godoc_badge]][godoc]
+Emojis for Go 😄🐢🚀
 
-Emojis for Go 😄 🐢 🚀
+## Reference
+
+Follow this link to view the reference documentation: [GoDoc Reference][godoc] 📝
 
 ## Installation
 
@@ -181,6 +183,5 @@ open source software.
 [emojilib]: https://github.com/muan/emojilib
 [github-api]: https://developer.github.com/v3/emojis/
 [godoc]: https://godoc.org/github.com/hackebrot/turtle (See GoDoc Reference)
-[godoc_badge]: https://img.shields.io/badge/go-documentation-blue.svg?style=flat
 [mit]: /LICENSE
 [new-issue]: https://github.com/hackebrot/turtle/issues/new

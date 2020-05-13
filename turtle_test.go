@@ -170,3 +170,22 @@ func Test_Emojis(t *testing.T) {
 		t.Errorf("Emojis[] = %v, want %v", repr.Repr(got), repr.Repr(want))
 	}
 }
+
+func Test_EmojisByChar(t *testing.T) {
+	want := &Emoji{
+		Name:     "fox_face",
+		Category: "animals_and_nature",
+		Char:     "🦊",
+		Keywords: []string{"animal", "nature", "face"},
+	}
+
+	got, ok := EmojisByChar[want.Char]
+
+	if !ok {
+		t.Fatalf("Emojis does not contain char %v", repr.Repr(want.Char))
+	}
+
+	if !cmp.Equal(got, want) {
+		t.Errorf("Emojis[] = %v, want %v", repr.Repr(got), repr.Repr(want))
+	}
+}

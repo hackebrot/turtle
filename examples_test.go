@@ -28,6 +28,29 @@ func ExampleEmojis() {
 	// Keywords: ["animal" "slow" "nature" "tortoise"]
 }
 
+// Example for using the EmojisByChar map to find an
+// emoji for the specified emoji character.
+func ExampleEmojisByChar() {
+	char := "🐢"
+	emoji, ok := EmojisByChar[char]
+
+	if !ok {
+		fmt.Fprintf(os.Stderr, "no emoji found for char: %v\n", char)
+		os.Exit(1)
+	}
+
+	fmt.Printf("Name: %q\n", emoji.Name)
+	fmt.Printf("Char: %s\n", emoji.Char)
+	fmt.Printf("Category: %q\n", emoji.Category)
+	fmt.Printf("Keywords: %q\n", emoji.Keywords)
+
+	// Output:
+	// Name: "turtle"
+	// Char: 🐢
+	// Category: "animals_and_nature"
+	// Keywords: ["animal" "slow" "nature" "tortoise"]
+}
+
 // Example for using the Category function to find all
 // emojis of the specified category.
 func ExampleCategory() {

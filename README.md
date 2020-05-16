@@ -61,40 +61,6 @@ Char: 🐢
 Category: "animals_and_nature"
 Keywords: ["animal" "slow" "nature" "tortoise"]
 ```
-### Name
-
-Use ``Name()`` to find the name of an emojis.
-
-```go
-package main
-
-import (
-	"fmt"
-	"os"
-
-	"github.com/hackebrot/turtle"
-)
-
-func main() {
-	n := "👺"
-	emoji := turtle.Name(n)
-
-	if emoji == nil {
-		fmt.Fprintf(os.Stderr, "no name found for search: %v\n", n)
-		os.Exit(1)
-	}
-
-	fmt.Printf("Name: %q\n", emoji.Name)
-	fmt.Printf("Char: %s\n", emoji.Char)
-	fmt.Printf("Category: %q\n", emoji.Category)
-	fmt.Printf("Keywords: %q\n", emoji.Keywords)
-}
-```
-
-```text
-japanese_goblin
-```
-
 
 ### Search
 

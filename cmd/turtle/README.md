@@ -19,7 +19,6 @@ Available Commands:
   category    Print all emojis of the category
   help        Help about any command
   keyword     Print all emojis with the keyword
-  name        Print the name of an emoji
   list        Print a list of values from the turtle library
   search      Print emojis with a name that contains the search string
   version     Print the version number of turtle
@@ -136,16 +135,6 @@ turtle -i "  " category travel_and_places
     ]
   }
 ]
-```
-
-### Name
-
-```bash
-$ turtle name 👚
-```
-
-```
-womans_clothes
 ```
 
 ### Keyword

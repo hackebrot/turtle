@@ -1,7 +1,7 @@
 package turtle
 
 // Version of the turtle library
-const Version = "v0.1.1"
+const Version = "v0.1.0"
 
 // Emojis maps a name to an Emoji
 var Emojis = make(map[string]*Emoji)
@@ -15,11 +15,6 @@ func init() {
 // Search emojis by a name
 func Search(s string) []*Emoji {
 	return search(emojis, s)
-}
-
-// Name retuns the emoji for a given name
-func Name(n string) *Emoji {
-	return name(emojis, n)
 }
 
 // Keyword filters the emojis by a keyword

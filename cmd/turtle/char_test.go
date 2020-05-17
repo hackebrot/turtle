@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func Test_runChar(t *testing.T) {
+func TestRunChar(t *testing.T) {
 	tests := []struct {
 		name    string
 		args    []string

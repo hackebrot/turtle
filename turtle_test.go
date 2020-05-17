@@ -34,7 +34,7 @@ var testEmojis = []*Emoji{
 	},
 }
 
-func Test_category(t *testing.T) {
+func TestCategory(t *testing.T) {
 	tests := []struct {
 		name string
 		c    string
@@ -74,7 +74,7 @@ func Test_category(t *testing.T) {
 	}
 }
 
-func Test_keyword(t *testing.T) {
+func TestKeyword(t *testing.T) {
 	tests := []struct {
 		name string
 		k    string
@@ -107,7 +107,7 @@ func Test_keyword(t *testing.T) {
 	}
 }
 
-func Test_search(t *testing.T) {
+func TestSearch(t *testing.T) {
 	tests := []struct {
 		name string
 		s    string
@@ -152,7 +152,7 @@ func Test_search(t *testing.T) {
 	}
 }
 
-func Test_Emojis(t *testing.T) {
+func TestEmojis(t *testing.T) {
 	want := &Emoji{
 		Name:     "fox_face",
 		Category: "animals_and_nature",
@@ -171,7 +171,7 @@ func Test_Emojis(t *testing.T) {
 	}
 }
 
-func Test_EmojisByChar(t *testing.T) {
+func TestEmojisByChar(t *testing.T) {
 	want := &Emoji{
 		Name:     "fox_face",
 		Category: "animals_and_nature",

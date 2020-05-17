@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func Test_runSearch(t *testing.T) {
+func TestRunSearch(t *testing.T) {
 	tests := []struct {
 		name    string
 		args    []string

@@ -7,7 +7,7 @@ import (
 	"github.com/hackebrot/go-repr/repr"
 )
 
-func Test_filter(t *testing.T) {
+func TestFilter(t *testing.T) {
 	tests := []struct {
 		name string
 		f    func(e *Emoji) bool

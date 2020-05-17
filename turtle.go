@@ -6,9 +6,13 @@ const Version = "v0.1.0"
 // Emojis maps a name to an Emoji
 var Emojis = make(map[string]*Emoji)
 
+// EmojisByChar maps a character to an Emoji
+var EmojisByChar = make(map[string]*Emoji)
+
 func init() {
 	for _, e := range emojis {
 		Emojis[e.Name] = e
+		EmojisByChar[e.Char] = e
 	}
 }
 

@@ -27,6 +27,7 @@ var (
 )
 
 func init() {
+	cmdTurtle.AddCommand(cmdChar)
 	cmdTurtle.AddCommand(cmdCategory)
 	cmdTurtle.AddCommand(cmdKeyword)
 	cmdTurtle.AddCommand(cmdSearch)

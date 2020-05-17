@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func Test_runKeyword(t *testing.T) {
+func TestRunKeyword(t *testing.T) {
 	tests := []struct {
 		name    string
 		args    []string

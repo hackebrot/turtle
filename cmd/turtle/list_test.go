@@ -7,7 +7,7 @@ import (
 	"github.com/hackebrot/go-repr/repr"
 )
 
-func Test_addIfUnique(t *testing.T) {
+func TestAddIfUnique(t *testing.T) {
 	type args struct {
 		r      []string
 		sItems []string

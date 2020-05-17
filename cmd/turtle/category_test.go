@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func Test_runCategory(t *testing.T) {
+func TestRunCategory(t *testing.T) {
 	tests := []struct {
 		name    string
 		args    []string

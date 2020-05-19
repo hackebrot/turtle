@@ -2,25 +2,26 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"math/rand"
-	"os"
 	"time"
 
 	"github.com/hackebrot/turtle"
 	"github.com/spf13/cobra"
 )
 
-var (
-	cmdRandom = &cobra.Command{
+func newRandomCmd(w io.Writer) *cobra.Command {
+	return &cobra.Command{
 		Use:   "random",
 		Short: "Print a random emoji",
 		Long:  "Print a random emoji",
-		RunE:  runRandom,
-		Args:  nil,
+		RunE: func(cmd *cobra.Command, args []string) error {
+			return runRandom(w)
+		},
 	}
-)
+}
 
-func runRandom(cmd *cobra.Command, args []string) error {
+func runRandom(w io.Writer) error {
 
 	emojis := make([]*turtle.Emoji, 0, len(turtle.Emojis))
 
@@ -28,7 +29,7 @@ func runRandom(cmd *cobra.Command, args []string) error {
 		emojis = append(emojis, value)
 	}
 
-	j, err := NewJSONWriter(os.Stdout, WithIndent(prefix, indent))
+	j, err := NewJSONWriter(w, WithIndent(prefix, indent))
 
 	if err != nil {
 		return fmt.Errorf("error creating JSONWriter: %v", err)

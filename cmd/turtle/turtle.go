@@ -2,21 +2,24 @@ package main
 
 import (
 	"fmt"
-	"os"
+	"io"
 
 	"github.com/hackebrot/turtle"
 	"github.com/spf13/cobra"
 )
 
-var (
-	indent string
-	prefix string
+var indent string
+var prefix string
 
-	cmdTurtle = &cobra.Command{
+// Create a new turtle command with the given output
+func newTurtleCmd(w io.Writer) *cobra.Command {
+	turtleCmd := &cobra.Command{
 		Use:   "turtle",
 		Short: "Print the emoji with the specified name identifier",
 		Long:  "Print the emoji with the specified name identifier",
-		RunE:  runTurtle,
+		RunE: func(cmd *cobra.Command, args []string) error {
+			return runTurtle(w, args[0])
+		},
 		Args: func(cmd *cobra.Command, args []string) error {
 			if len(args) != 1 {
 				return fmt.Errorf("require one emoji name")
@@ -24,23 +27,22 @@ var (
 			return nil
 		},
 	}
-)
 
-func init() {
-	cmdTurtle.AddCommand(cmdChar)
-	cmdTurtle.AddCommand(cmdCategory)
-	cmdTurtle.AddCommand(cmdKeyword)
-	cmdTurtle.AddCommand(cmdSearch)
-	cmdTurtle.AddCommand(cmdVersion)
-	cmdTurtle.AddCommand(cmdList)
-	cmdTurtle.AddCommand(cmdRandom)
+	turtleCmd.PersistentFlags().StringVarP(&indent, "indent", "i", "", "indent for JSON output")
+	turtleCmd.PersistentFlags().StringVarP(&prefix, "prefix", "p", "", "prefix for JSON output")
 
-	cmdTurtle.PersistentFlags().StringVarP(&indent, "indent", "i", "", "indent for JSON output")
-	cmdTurtle.PersistentFlags().StringVarP(&prefix, "prefix", "p", "", "prefix for JSON output")
+	turtleCmd.AddCommand(newCharCmd(w))
+	turtleCmd.AddCommand(newCategoryCmd(w))
+	turtleCmd.AddCommand(newKeywordCmd(w))
+	turtleCmd.AddCommand(newSearchCmd(w))
+	turtleCmd.AddCommand(newVersionCmd(w))
+	turtleCmd.AddCommand(newListCmd(w))
+	turtleCmd.AddCommand(newRandomCmd(w))
+
+	return turtleCmd
 }
 
-func runTurtle(cmd *cobra.Command, args []string) error {
-	name := args[0]
+func runTurtle(w io.Writer, name string) error {
 
 	e, ok := turtle.Emojis[name]
 
@@ -48,7 +50,7 @@ func runTurtle(cmd *cobra.Command, args []string) error {
 		return fmt.Errorf("cannot find emoji with name %q", name)
 	}
 
-	j, err := NewJSONWriter(os.Stdout, WithIndent(prefix, indent))
+	j, err := NewJSONWriter(w, WithIndent(prefix, indent))
 
 	if err != nil {
 		return fmt.Errorf("error creating JSONWriter: %v", err)

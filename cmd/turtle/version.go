@@ -2,20 +2,28 @@ package main
 
 import (
 	"fmt"
+	"io"
 
 	"github.com/hackebrot/turtle"
 	"github.com/spf13/cobra"
 )
 
-var (
-	cmdVersion = &cobra.Command{
+func newVersionCmd(w io.Writer) *cobra.Command {
+	return &cobra.Command{
 		Use:   "version",
 		Short: "Print the version number of turtle",
 		Long:  "Print the version number of turtle",
-		Run:   runVersion,
+		RunE: func(cmd *cobra.Command, args []string) error {
+			return runVersion(w)
+		},
 	}
-)
+}
 
-func runVersion(cmd *cobra.Command, args []string) {
-	fmt.Printf("turtle %s\n", turtle.Version)
+func runVersion(w io.Writer) error {
+
+	if _, err := fmt.Fprintf(w, "turtle %s\n", turtle.Version); err != nil {
+		return fmt.Errorf("error writing version number: %v", err)
+	}
+
+	return nil
 }

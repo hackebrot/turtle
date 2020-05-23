@@ -28,18 +28,13 @@ func runRandom(cmd *cobra.Command, args []string) error {
 		emojis = append(emojis, value)
 	}
 
-	var err error
-	var w Writer
-	if plain {
-		w, err = NewPlainWriter(os.Stdout)
-	} else {
-		w, err = NewJSONWriter(os.Stdout, WithIndent(prefix, indent))
-	}
+	j, err := NewJSONWriter(os.Stdout, WithIndent(prefix, indent))
+
 	if err != nil {
-		return fmt.Errorf("error creating Writer: %v", err)
+		return fmt.Errorf("error creating JSONWriter: %v", err)
 	}
 
-	return w.WriteEmoji(emojis[rand.Intn(len(emojis))])
+	return j.WriteEmoji(emojis[rand.Intn(len(emojis))])
 }
 
 func init() {

@@ -32,16 +32,11 @@ func runCategory(cmd *cobra.Command, args []string) error {
 		return fmt.Errorf("cannot find emojis of category %q", c)
 	}
 
-	var err error
-	var w Writer
-	if plain {
-		w, err = NewPlainWriter(os.Stdout)
-	} else {
-		w, err = NewJSONWriter(os.Stdout, WithIndent(prefix, indent))
-	}
+	j, err := NewJSONWriter(os.Stdout, WithIndent(prefix, indent))
+
 	if err != nil {
-		return fmt.Errorf("error creating Writer: %v", err)
+		return fmt.Errorf("error creating JSONWriter: %v", err)
 	}
 
-	return w.WriteEmojis(emojis)
+	return j.WriteEmojis(emojis)
 }

@@ -33,6 +33,7 @@ func init() {
 	cmdTurtle.AddCommand(cmdSearch)
 	cmdTurtle.AddCommand(cmdVersion)
 	cmdTurtle.AddCommand(cmdList)
+	cmdTurtle.AddCommand(cmdRandom)
 
 	cmdTurtle.PersistentFlags().StringVarP(&indent, "indent", "i", "", "indent for JSON output")
 	cmdTurtle.PersistentFlags().StringVarP(&prefix, "prefix", "p", "", "prefix for JSON output")

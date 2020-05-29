@@ -1,32 +1,21 @@
 package main
 
-import (
-	"testing"
-)
+import "testing"
 
 func TestRunChar(t *testing.T) {
-	tests := []struct {
-		name    string
-		args    []string
-		wantErr bool
-	}{
-		{
-			name:    "error",
-			args:    []string{"nopeasdasdasdsd"},
-			wantErr: true,
-		},
-		{
-			name:    "no error",
-			args:    []string{"🤖"},
-			wantErr: false,
-		},
-	}
-
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if err := runChar(nil, tt.args); (err != nil) != tt.wantErr {
-				t.Errorf("runChar() error = %v, wantErr %v", err, tt.wantErr)
-			}
-		})
-	}
+	tests := []cmdTestCase{{
+		name:      "error missing char",
+		args:      []string{"char"},
+		wantError: true,
+	}, {
+		name:      "error unknown char",
+		args:      []string{"char", "abc"},
+		wantError: true,
+	}, {
+		name:      "robot",
+		args:      []string{"char", "🤖"},
+		outFile:   "char/robot.json",
+		wantError: false,
+	}}
+	runTestCmd(t, tests)
 }

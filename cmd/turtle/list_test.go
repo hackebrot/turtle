@@ -59,3 +59,25 @@ func TestAddIfUnique(t *testing.T) {
 		})
 	}
 }
+func TestRunList(t *testing.T) {
+	tests := []cmdTestCase{{
+		name:      "show help for missing subcommand",
+		args:      []string{"list"},
+		outFile:   "list/help.txt",
+		wantError: false,
+	}, {
+		name:      "categories",
+		args:      []string{"list", "categories"},
+		outFile:   "list/categories.json",
+		wantError: false,
+	}, {
+		name:      "keywords",
+		args:      []string{"list", "keywords"},
+		wantError: false,
+	}, {
+		name:      "names",
+		args:      []string{"list", "names"},
+		wantError: false,
+	}}
+	runTestCmd(t, tests)
+}

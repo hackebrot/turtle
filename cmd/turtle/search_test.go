@@ -4,7 +4,7 @@ import "testing"
 
 func TestRunSearch(t *testing.T) {
 	tests := []cmdTestCase{{
-		name:      "error",
+		name:      "error no match",
 		args:      []string{"search", "aaaaaaaaaa"},
 		wantError: true,
 	}, {

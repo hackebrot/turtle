@@ -4,7 +4,7 @@ import "testing"
 
 func TestRunCategory(t *testing.T) {
 	tests := []cmdTestCase{{
-		name:      "error",
+		name:      "error missing category",
 		args:      []string{"category"},
 		wantError: true,
 	}, {

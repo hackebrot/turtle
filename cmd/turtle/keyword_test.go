@@ -4,11 +4,11 @@ import "testing"
 
 func TestRunKeyword(t *testing.T) {
 	tests := []cmdTestCase{{
-		name:      "error on missing keyword",
+		name:      "error missing keyword",
 		args:      []string{"keyword"},
 		wantError: true,
 	}, {
-		name:      "error unused keyword",
+		name:      "error unknown keyword",
 		args:      []string{"keyword", "foo"},
 		wantError: true,
 	}, {

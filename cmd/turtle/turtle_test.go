@@ -72,3 +72,12 @@ func executeCmd(args []string) (string, error) {
 
 	return buf.String(), err
 }
+
+func TestVersionFlag(t *testing.T) {
+	tests := []cmdTestCase{{
+		name:      "version",
+		args:      []string{"--version"},
+		wantError: false,
+	}}
+	runTestCmd(t, tests)
+}

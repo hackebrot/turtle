@@ -15,6 +15,7 @@ func newRandomCmd(w io.Writer) *cobra.Command {
 		Use:   "random",
 		Short: "Print a random emoji",
 		Long:  "Print a random emoji",
+		Args:  cobra.NoArgs,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return runRandom(w)
 		},

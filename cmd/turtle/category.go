@@ -10,17 +10,12 @@ import (
 
 func newCategoryCmd(w io.Writer) *cobra.Command {
 	return &cobra.Command{
-		Use:   "category",
+		Use:   "category [CATEGORY]",
 		Short: "Print all emojis of the category",
 		Long:  "Print all emojis of the category",
+		Args:  cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return runCategory(w, args[0])
-		},
-		Args: func(cmd *cobra.Command, args []string) error {
-			if len(args) != 1 {
-				return fmt.Errorf("require one category")
-			}
-			return nil
 		},
 	}
 }

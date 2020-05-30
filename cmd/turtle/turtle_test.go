@@ -61,7 +61,7 @@ func runTestCmd(t *testing.T, tests []cmdTestCase) {
 	}
 }
 
-// executCmd creates and executes a new turtle cmd
+// executeCmd creates and executes a new turtle cmd
 func executeCmd(args []string) (string, error) {
 	buf := new(bytes.Buffer)
 	root := newTurtleCmd(buf)

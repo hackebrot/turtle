@@ -14,9 +14,10 @@ var prefix string
 // Create a new turtle command with the given output
 func newTurtleCmd(w io.Writer) *cobra.Command {
 	turtleCmd := &cobra.Command{
-		Use:   "turtle",
-		Short: "Print the emoji with the specified name identifier",
-		Long:  "Print the emoji with the specified name identifier",
+		Use:     "turtle",
+		Version: turtle.Version,
+		Short:   "Print the emoji with the specified name identifier",
+		Long:    "Print the emoji with the specified name identifier",
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return runTurtle(w, args[0])
 		},
@@ -31,11 +32,12 @@ func newTurtleCmd(w io.Writer) *cobra.Command {
 	turtleCmd.PersistentFlags().StringVarP(&indent, "indent", "i", "", "indent for JSON output")
 	turtleCmd.PersistentFlags().StringVarP(&prefix, "prefix", "p", "", "prefix for JSON output")
 
+	turtleCmd.SetVersionTemplate("{{with .Name}}{{printf \"%s \" .}}{{end}}{{printf \"%s\" .Version}}\n")
+
 	turtleCmd.AddCommand(newCharCmd(w))
 	turtleCmd.AddCommand(newCategoryCmd(w))
 	turtleCmd.AddCommand(newKeywordCmd(w))
 	turtleCmd.AddCommand(newSearchCmd(w))
-	turtleCmd.AddCommand(newVersionCmd(w))
 	turtleCmd.AddCommand(newListCmd(w))
 	turtleCmd.AddCommand(newRandomCmd(w))
 

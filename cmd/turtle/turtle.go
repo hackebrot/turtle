@@ -14,19 +14,14 @@ var prefix string
 // Create a new turtle command with the given output
 func newTurtleCmd(w io.Writer) *cobra.Command {
 	turtleCmd := &cobra.Command{
-		Use:     "turtle",
-		Version: turtle.Version,
-		Short:   "Print the emoji with the specified name identifier",
-		Long:    "Print the emoji with the specified name identifier",
+		Use:   "turtle [NAME]",
+		Short: "Print the emoji with the specified name identifier",
+		Long:  "Print the emoji with the specified name identifier",
+		Args:  cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return runTurtle(w, args[0])
 		},
-		Args: func(cmd *cobra.Command, args []string) error {
-			if len(args) != 1 {
-				return fmt.Errorf("require one emoji name")
-			}
-			return nil
-		},
+		Version: turtle.Version,
 	}
 
 	turtleCmd.PersistentFlags().StringVarP(&indent, "indent", "i", "", "indent for JSON output")

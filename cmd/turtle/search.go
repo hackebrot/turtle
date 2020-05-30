@@ -10,17 +10,12 @@ import (
 
 func newSearchCmd(w io.Writer) *cobra.Command {
 	return &cobra.Command{
-		Use:   "search",
+		Use:   "search [STRING]",
 		Short: "Print emojis with a name that contains the search string",
 		Long:  "Print emojis with a name that contains the search string",
+		Args:  cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return runSearch(w, args[0])
-		},
-		Args: func(cmd *cobra.Command, args []string) error {
-			if len(args) != 1 {
-				return fmt.Errorf("require one search string")
-			}
-			return nil
 		},
 	}
 }

@@ -10,17 +10,12 @@ import (
 
 func newKeywordCmd(w io.Writer) *cobra.Command {
 	return &cobra.Command{
-		Use:   "keyword",
+		Use:   "keyword [KEYWORD]",
 		Short: "Print all emojis with the keyword",
 		Long:  "Print all emojis with the keyword",
+		Args:  cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return runKeyword(w, args[0])
-		},
-		Args: func(cmd *cobra.Command, args []string) error {
-			if len(args) != 1 {
-				return fmt.Errorf("require one keyword")
-			}
-			return nil
 		},
 	}
 }

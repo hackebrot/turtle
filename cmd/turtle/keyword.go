@@ -9,8 +9,7 @@ import (
 )
 
 func newKeywordCmd(w io.Writer) *cobra.Command {
-
-	keywordCmd := &cobra.Command{
+	return &cobra.Command{
 		Use:   "keyword",
 		Short: "Print all emojis with the keyword",
 		Long:  "Print all emojis with the keyword",
@@ -24,7 +23,6 @@ func newKeywordCmd(w io.Writer) *cobra.Command {
 			return nil
 		},
 	}
-	return keywordCmd
 }
 
 func runKeyword(w io.Writer, k string) error {

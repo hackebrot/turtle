@@ -2,18 +2,20 @@ package main
 
 import (
 	"fmt"
-	"os"
+	"io"
 
 	"github.com/hackebrot/turtle"
 	"github.com/spf13/cobra"
 )
 
-var (
-	cmdCategory = &cobra.Command{
+func newCategoryCmd(w io.Writer) *cobra.Command {
+	return &cobra.Command{
 		Use:   "category",
 		Short: "Print all emojis of the category",
 		Long:  "Print all emojis of the category",
-		RunE:  runCategory,
+		RunE: func(cmd *cobra.Command, args []string) error {
+			return runCategory(w, args[0])
+		},
 		Args: func(cmd *cobra.Command, args []string) error {
 			if len(args) != 1 {
 				return fmt.Errorf("require one category")
@@ -21,10 +23,9 @@ var (
 			return nil
 		},
 	}
-)
+}
 
-func runCategory(cmd *cobra.Command, args []string) error {
-	c := args[0]
+func runCategory(w io.Writer, c string) error {
 
 	emojis := turtle.Category(c)
 
@@ -32,7 +33,7 @@ func runCategory(cmd *cobra.Command, args []string) error {
 		return fmt.Errorf("cannot find emojis of category %q", c)
 	}
 
-	j, err := NewJSONWriter(os.Stdout, WithIndent(prefix, indent))
+	j, err := NewJSONWriter(w, WithIndent(prefix, indent))
 
 	if err != nil {
 		return fmt.Errorf("error creating JSONWriter: %v", err)

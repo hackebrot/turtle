@@ -1,32 +1,22 @@
 package main
 
-import (
-	"testing"
-)
+import "testing"
 
 func TestRunSearch(t *testing.T) {
-	tests := []struct {
-		name    string
-		args    []string
-		wantErr bool
-	}{
-		{
-			name:    "error",
-			args:    []string{"nopeasdasdasdsd"},
-			wantErr: true,
-		},
-		{
-			name:    "no error",
-			args:    []string{"dog"},
-			wantErr: false,
-		},
-	}
-
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if err := runSearch(nil, tt.args); (err != nil) != tt.wantErr {
-				t.Errorf("runSearch() error = %v, wantErr %v", err, tt.wantErr)
-			}
-		})
-	}
+	tests := []cmdTestCase{{
+		name:      "error no match",
+		args:      []string{"search", "aaaaaaaaaa"},
+		wantError: true,
+	}, {
+		name:      "single match",
+		args:      []string{"search", "rocket"},
+		outFile:   "search/rocket.json",
+		wantError: false,
+	}, {
+		name:      "multiple matches",
+		args:      []string{"search", "dog"},
+		outFile:   "search/dog.json",
+		wantError: false,
+	}}
+	runTestCmd(t, tests)
 }

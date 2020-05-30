@@ -38,7 +38,6 @@ func newTurtleCmd(w io.Writer) *cobra.Command {
 	turtleCmd.AddCommand(newCategoryCmd(w))
 	turtleCmd.AddCommand(newKeywordCmd(w))
 	turtleCmd.AddCommand(newSearchCmd(w))
-	turtleCmd.AddCommand(newVersionCmd(w))
 	turtleCmd.AddCommand(newListCmd(w))
 	turtleCmd.AddCommand(newRandomCmd(w))
 

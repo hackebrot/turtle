@@ -30,3 +30,8 @@ func Keyword(k string) []*Emoji {
 func Category(c string) []*Emoji {
 	return category(emojis, c)
 }
+
+// Filter the emojis based on the given comparison function
+func Filter(f func(e *Emoji) bool) []*Emoji {
+	return filter(emojis, f)
+}

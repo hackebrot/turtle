@@ -13,7 +13,10 @@ func newListCmd(w io.Writer) *cobra.Command {
 	listCmd := &cobra.Command{
 		Use:   "list",
 		Short: "Print a list of values from the turtle library",
-		Long:  "Print a list of values from the turtle library",
+		Long: `Print a list of values from the turtle library.
+
+List requires a subcommand, e.g. turte list categories`,
+		Args: cobra.NoArgs,
 	}
 	categoriesCmd := &cobra.Command{
 		Use:   "categories",
@@ -46,7 +49,6 @@ func newListCmd(w io.Writer) *cobra.Command {
 	listCmd.AddCommand(keywordsCmd)
 	listCmd.AddCommand(namesCmd)
 	return listCmd
-
 }
 
 // addIfUnique adds strings to a given slice, if it

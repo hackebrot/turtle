@@ -1,4 +1,6 @@
-Print a list of values from the turtle library
+Print a list of values from the turtle library.
+
+List requires a subcommand, e.g. turte list categories
 
 Usage:
   turtle list [command]

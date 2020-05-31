@@ -101,3 +101,28 @@ func ExampleSearch() {
 	// Output:
 	// computer: [💻 🖱 🖥]
 }
+
+// Example for using the Filter function to find all
+// emojis in a category with a specific keyword
+func ExampleFilter() {
+	emojis := Filter(func(e *Emoji) bool {
+		if e.Category == "animals_and_nature" {
+			for _, keyword := range e.Keywords {
+				if keyword == "world" {
+					return true
+				}
+			}
+		}
+		return false
+	})
+
+	if emojis == nil {
+		fmt.Fprintf(os.Stderr, "no emojis found in animals_and_nature with keyword world\n")
+		os.Exit(1)
+	}
+
+	fmt.Printf("emojis: %s", emojis)
+
+	// Output:
+	// emojis: [🌍 🌎 🌏]
+}

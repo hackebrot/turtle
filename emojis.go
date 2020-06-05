@@ -28,6 +28,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"thumbsdown", "no", "dislike", "hand"},
 	},
 	{
+		Name:     "adult",
+		Category: "people",
+		Char:     "🧑",
+		Keywords: []string{"gender-neutral", "person"},
+	},
+	{
 		Name:     "alien",
 		Category: "people",
 		Char:     "👽",
@@ -70,10 +76,22 @@ var emojis = []*Emoji{
 		Keywords: []string{"child", "boy", "girl", "toddler"},
 	},
 	{
+		Name:     "bearded_person",
+		Category: "people",
+		Char:     "🧔",
+		Keywords: []string{"person", "bewhiskered"},
+	},
+	{
 		Name:     "bikini",
 		Category: "people",
 		Char:     "👙",
 		Keywords: []string{"swimming", "female", "woman", "girl", "fashion", "beach", "summer"},
+	},
+	{
+		Name:     "billed_hat",
+		Category: "people",
+		Char:     "🧢",
+		Keywords: []string{"cap", "baseball"},
 	},
 	{
 		Name:     "blonde_man",
@@ -118,6 +136,18 @@ var emojis = []*Emoji{
 		Keywords: []string{"man", "male", "guy", "teenager"},
 	},
 	{
+		Name:     "brain",
+		Category: "people",
+		Char:     "🧠",
+		Keywords: []string{"smart", "intelligent"},
+	},
+	{
+		Name:     "breastfeeding",
+		Category: "people",
+		Char:     "🤱",
+		Keywords: []string{"nursing", "baby"},
+	},
+	{
 		Name:     "bride_with_veil",
 		Category: "people",
 		Char:     "👰",
@@ -127,7 +157,7 @@ var emojis = []*Emoji{
 		Name:     "briefcase",
 		Category: "people",
 		Char:     "💼",
-		Keywords: []string{"business", "documents", "work", "law", "legal"},
+		Keywords: []string{"business", "documents", "work", "law", "legal", "job", "career"},
 	},
 	{
 		Name:     "bust_in_silhouette",
@@ -148,6 +178,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"hands", "gesture"},
 	},
 	{
+		Name:     "child",
+		Category: "people",
+		Char:     "🧒",
+		Keywords: []string{"gender-neutral", "young"},
+	},
+	{
 		Name:     "clap",
 		Category: "people",
 		Char:     "👏",
@@ -164,6 +200,18 @@ var emojis = []*Emoji{
 		Category: "people",
 		Char:     "🤡",
 		Keywords: []string{"face"},
+	},
+	{
+		Name:     "coat",
+		Category: "people",
+		Char:     "🧥",
+		Keywords: []string{"jacket"},
+	},
+	{
+		Name:     "cold",
+		Category: "people",
+		Char:     "🥶",
+		Keywords: []string{"face", "blue", "freezing", "frozen", "frostbite", "icicles"},
 	},
 	{
 		Name:     "cold_sweat",
@@ -328,6 +376,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"face", "hear", "sound", "listen"},
 	},
 	{
+		Name:     "exploding_head",
+		Category: "people",
+		Char:     "🤯",
+		Keywords: []string{"face", "shocked", "mind", "blown"},
+	},
+	{
 		Name:     "expressionless",
 		Category: "people",
 		Char:     "😑",
@@ -361,7 +415,7 @@ var emojis = []*Emoji{
 		Name:     "face_with_thermometer",
 		Category: "people",
 		Char:     "🤒",
-		Keywords: []string{"sick", "temperature", "thermometer", "cold"},
+		Keywords: []string{"sick", "temperature", "thermometer", "cold", "fever"},
 	},
 	{
 		Name:     "facepunch",
@@ -550,10 +604,22 @@ var emojis = []*Emoji{
 		Keywords: []string{"hand", "fistbump"},
 	},
 	{
+		Name:     "flat_shoe",
+		Category: "people",
+		Char:     "🥿",
+		Keywords: []string{"ballet", "slip-on", "slipper"},
+	},
+	{
 		Name:     "flushed",
 		Category: "people",
 		Char:     "😳",
 		Keywords: []string{"face", "blush", "shy", "flattered"},
+	},
+	{
+		Name:     "foot",
+		Category: "people",
+		Char:     "🦶",
+		Keywords: []string{"kick", "stomp"},
 	},
 	{
 		Name:     "footprints",
@@ -589,7 +655,7 @@ var emojis = []*Emoji{
 		Name:     "fu",
 		Category: "people",
 		Char:     "🖕",
-		Keywords: []string{"hand", "fingers", "rude"},
+		Keywords: []string{"hand", "fingers", "rude", "middle", "flipping"},
 	},
 	{
 		Name:     "ghost",
@@ -602,6 +668,18 @@ var emojis = []*Emoji{
 		Category: "people",
 		Char:     "👧",
 		Keywords: []string{"female", "woman", "teenager"},
+	},
+	{
+		Name:     "gloves",
+		Category: "people",
+		Char:     "🧤",
+		Keywords: []string{"hands", "winter", "clothes"},
+	},
+	{
+		Name:     "goggles",
+		Category: "people",
+		Char:     "🥽",
+		Keywords: []string{"eyes", "protection", "safety"},
 	},
 	{
 		Name:     "grimacing",
@@ -646,6 +724,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"female", "girl", "woman"},
 	},
 	{
+		Name:     "hand_over_mouth",
+		Category: "people",
+		Char:     "🤭",
+		Keywords: []string{"face", "whoops", "shock", "surprise"},
+	},
+	{
 		Name:     "handbag",
 		Category: "people",
 		Char:     "👜",
@@ -674,6 +758,18 @@ var emojis = []*Emoji{
 		Category: "people",
 		Char:     "👠",
 		Keywords: []string{"fashion", "shoes", "female", "pumps", "stiletto"},
+	},
+	{
+		Name:     "hiking_boot",
+		Category: "people",
+		Char:     "🥾",
+		Keywords: []string{"backpacking", "camping", "hiking"},
+	},
+	{
+		Name:     "hot",
+		Category: "people",
+		Char:     "🥵",
+		Keywords: []string{"face", "feverish", "heat", "red", "sweating"},
 	},
 	{
 		Name:     "hugs",
@@ -772,10 +868,22 @@ var emojis = []*Emoji{
 		Keywords: []string{"face", "affection", "valentines", "infatuation", "kiss"},
 	},
 	{
+		Name:     "labcoat",
+		Category: "people",
+		Char:     "🥼",
+		Keywords: []string{"doctor", "experiment", "scientist", "chemist"},
+	},
+	{
 		Name:     "laughing",
 		Category: "people",
 		Char:     "😆",
 		Keywords: []string{"happy", "joy", "lol", "satisfied", "haha", "face", "glad", "XD", "laugh"},
+	},
+	{
+		Name:     "leg",
+		Category: "people",
+		Char:     "🦵",
+		Keywords: []string{"kick", "limb"},
 	},
 	{
 		Name:     "lips",
@@ -788,6 +896,18 @@ var emojis = []*Emoji{
 		Category: "people",
 		Char:     "💄",
 		Keywords: []string{"female", "girl", "fashion", "woman"},
+	},
+	{
+		Name:     "love_you",
+		Category: "people",
+		Char:     "🤟",
+		Keywords: []string{"hand", "fingers", "gesture"},
+	},
+	{
+		Name:     "luggage",
+		Category: "people",
+		Char:     "🧳",
+		Keywords: []string{"packing", "travel"},
 	},
 	{
 		Name:     "lying_face",
@@ -832,9 +952,15 @@ var emojis = []*Emoji{
 		Keywords: []string{"male", "boy", "fun", "dancer"},
 	},
 	{
+		Name:     "man_elf",
+		Category: "people",
+		Char:     "🧝‍♂️",
+		Keywords: []string{"man", "male"},
+	},
+	{
 		Name:     "man_facepalming",
 		Category: "people",
-		Char:     "🤦",
+		Char:     "🤦‍♂️",
 		Keywords: []string{"man", "male", "boy", "disbelief"},
 	},
 	{
@@ -842,6 +968,12 @@ var emojis = []*Emoji{
 		Category: "people",
 		Char:     "👨‍🏭",
 		Keywords: []string{"assembly", "industrial", "man", "human"},
+	},
+	{
+		Name:     "man_fairy",
+		Category: "people",
+		Char:     "🧚‍♂️",
+		Keywords: []string{"man", "male"},
 	},
 	{
 		Name:     "man_farmer",
@@ -856,10 +988,22 @@ var emojis = []*Emoji{
 		Keywords: []string{"fireman", "man", "human"},
 	},
 	{
+		Name:     "man_genie",
+		Category: "people",
+		Char:     "🧞‍♂️",
+		Keywords: []string{"man", "male"},
+	},
+	{
 		Name:     "man_health_worker",
 		Category: "people",
 		Char:     "👨‍⚕️",
 		Keywords: []string{"doctor", "nurse", "therapist", "healthcare", "man", "human"},
+	},
+	{
+		Name:     "man_in_steamy_room",
+		Category: "people",
+		Char:     "🧖‍♂️",
+		Keywords: []string{"male", "man", "spa", "steamroom", "sauna"},
 	},
 	{
 		Name:     "man_in_tuxedo",
@@ -877,7 +1021,7 @@ var emojis = []*Emoji{
 		Name:     "man_mechanic",
 		Category: "people",
 		Char:     "👨‍🔧",
-		Keywords: []string{"plumber", "man", "human"},
+		Keywords: []string{"plumber", "man", "human", "wrench"},
 	},
 	{
 		Name:     "man_office_worker",
@@ -916,6 +1060,18 @@ var emojis = []*Emoji{
 		Keywords: []string{"graduate", "man", "human"},
 	},
 	{
+		Name:     "man_superhero",
+		Category: "people",
+		Char:     "🦸‍♂️",
+		Keywords: []string{"man", "male", "good", "hero", "superpowers"},
+	},
+	{
+		Name:     "man_supervillain",
+		Category: "people",
+		Char:     "🦹‍♂️",
+		Keywords: []string{"man", "male", "evil", "bad", "criminal", "hero", "superpowers"},
+	},
+	{
 		Name:     "man_teacher",
 		Category: "people",
 		Char:     "👨‍🏫",
@@ -925,7 +1081,13 @@ var emojis = []*Emoji{
 		Name:     "man_technologist",
 		Category: "people",
 		Char:     "👨‍💻",
-		Keywords: []string{"coder", "developer", "engineer", "programmer", "software", "man", "human"},
+		Keywords: []string{"coder", "developer", "engineer", "programmer", "software", "man", "human", "laptop", "computer"},
+	},
+	{
+		Name:     "man_vampire",
+		Category: "people",
+		Char:     "🧛‍♂️",
+		Keywords: []string{"man", "male", "dracula"},
 	},
 	{
 		Name:     "man_with_gua_pi_mao",
@@ -938,6 +1100,12 @@ var emojis = []*Emoji{
 		Category: "people",
 		Char:     "👳",
 		Keywords: []string{"male", "indian", "hinduism", "arabs"},
+	},
+	{
+		Name:     "man_zombie",
+		Category: "people",
+		Char:     "🧟‍♂️",
+		Keywords: []string{"man", "male", "dracula", "undead", "walking dead"},
 	},
 	{
 		Name:     "mans_shoe",
@@ -964,6 +1132,18 @@ var emojis = []*Emoji{
 		Keywords: []string{"female", "girl", "woman", "head"},
 	},
 	{
+		Name:     "mermaid",
+		Category: "people",
+		Char:     "🧜‍♀️",
+		Keywords: []string{"woman", "female", "merwoman", "ariel"},
+	},
+	{
+		Name:     "merman",
+		Category: "people",
+		Char:     "🧜‍♂️",
+		Keywords: []string{"man", "male", "triton"},
+	},
+	{
 		Name:     "metal",
 		Category: "people",
 		Char:     "🤘",
@@ -974,6 +1154,12 @@ var emojis = []*Emoji{
 		Category: "people",
 		Char:     "🤑",
 		Keywords: []string{"face", "rich", "dollar", "money"},
+	},
+	{
+		Name:     "monocle",
+		Category: "people",
+		Char:     "🧐",
+		Keywords: []string{"face", "stuffy", "wealthy"},
 	},
 	{
 		Name:     "mortar_board",
@@ -1003,7 +1189,7 @@ var emojis = []*Emoji{
 		Name:     "nauseated_face",
 		Category: "people",
 		Char:     "🤢",
-		Keywords: []string{"face", "vomit"},
+		Keywords: []string{"face", "vomit", "gross", "green", "sick", "throw up", "ill"},
 	},
 	{
 		Name:     "necktie",
@@ -1051,7 +1237,7 @@ var emojis = []*Emoji{
 		Name:     "ok_hand",
 		Category: "people",
 		Char:     "👌",
-		Keywords: []string{"fingers", "limbs", "perfect", "ok"},
+		Keywords: []string{"fingers", "limbs", "perfect", "ok", "okay"},
 	},
 	{
 		Name:     "ok_man",
@@ -1064,6 +1250,12 @@ var emojis = []*Emoji{
 		Category: "people",
 		Char:     "🙆",
 		Keywords: []string{"women", "girl", "female", "pink", "human", "woman"},
+	},
+	{
+		Name:     "older_adult",
+		Category: "people",
+		Char:     "🧓",
+		Keywords: []string{"human", "elder", "senior", "gender-neutral"},
 	},
 	{
 		Name:     "older_man",
@@ -1090,16 +1282,34 @@ var emojis = []*Emoji{
 		Keywords: []string{"face", "surprise", "impressed", "wow", "whoa", ":O"},
 	},
 	{
+		Name:     "palms_up",
+		Category: "people",
+		Char:     "🤲",
+		Keywords: []string{"hands", "gesture", "cupped", "prayer"},
+	},
+	{
+		Name:     "partying",
+		Category: "people",
+		Char:     "🥳",
+		Keywords: []string{"face", "celebration", "woohoo"},
+	},
+	{
 		Name:     "pensive",
 		Category: "people",
 		Char:     "😔",
-		Keywords: []string{"face", "sad", "depressed", "okay", "upset"},
+		Keywords: []string{"face", "sad", "depressed", "upset"},
 	},
 	{
 		Name:     "persevere",
 		Category: "people",
 		Char:     "😣",
 		Keywords: []string{"face", "sick", "no", "upset", "oops"},
+	},
+	{
+		Name:     "pleading",
+		Category: "people",
+		Char:     "🥺",
+		Keywords: []string{"face", "begging", "mercy"},
 	},
 	{
 		Name:     "point_down",
@@ -1216,6 +1426,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"fingers", "raised", "backhand"},
 	},
 	{
+		Name:     "raised_eyebrow",
+		Category: "people",
+		Char:     "🤨",
+		Keywords: []string{"face", "distrust", "scepticism", "disapproval", "disbelief", "surprise"},
+	},
+	{
 		Name:     "raised_hand",
 		Category: "people",
 		Char:     "✋",
@@ -1273,7 +1489,7 @@ var emojis = []*Emoji{
 		Name:     "robot",
 		Category: "people",
 		Char:     "🤖",
-		Keywords: []string{"computer", "machine"},
+		Keywords: []string{"computer", "machine", "bot"},
 	},
 	{
 		Name:     "rofl",
@@ -1312,6 +1528,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"festival", "man", "male", "xmas", "father christmas"},
 	},
 	{
+		Name:     "scarf",
+		Category: "people",
+		Char:     "🧣",
+		Keywords: []string{"neck", "winter", "clothes"},
+	},
+	{
 		Name:     "school_satchel",
 		Category: "people",
 		Char:     "🎒",
@@ -1336,10 +1558,16 @@ var emojis = []*Emoji{
 		Keywords: []string{"camera", "phone"},
 	},
 	{
+		Name:     "shushing",
+		Category: "people",
+		Char:     "🤫",
+		Keywords: []string{"face", "quiet", "shhh"},
+	},
+	{
 		Name:     "skull",
 		Category: "people",
 		Char:     "💀",
-		Keywords: []string{"dead", "skeleton", "creepy"},
+		Keywords: []string{"dead", "skeleton", "creepy", "death"},
 	},
 	{
 		Name:     "sleeping",
@@ -1390,6 +1618,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"animal", "cats", "happy", "smile"},
 	},
 	{
+		Name:     "smiling_face_with_three_hearts",
+		Category: "people",
+		Char:     "🥰",
+		Keywords: []string{"face", "love", "like", "affection", "valentines", "infatuation", "crush", "hearts", "adore"},
+	},
+	{
 		Name:     "smiling_imp",
 		Category: "people",
 		Char:     "😈",
@@ -1411,7 +1645,7 @@ var emojis = []*Emoji{
 		Name:     "sneezing_face",
 		Category: "people",
 		Char:     "🤧",
-		Keywords: []string{"face", "gesundheit", "sneeze"},
+		Keywords: []string{"face", "gesundheit", "sneeze", "sick", "allergy"},
 	},
 	{
 		Name:     "sob",
@@ -1420,10 +1654,28 @@ var emojis = []*Emoji{
 		Keywords: []string{"face", "cry", "tears", "sad", "upset", "depressed"},
 	},
 	{
+		Name:     "socks",
+		Category: "people",
+		Char:     "🧦",
+		Keywords: []string{"stockings", "clothes"},
+	},
+	{
+		Name:     "sorceress",
+		Category: "people",
+		Char:     "🧙‍♀️",
+		Keywords: []string{"woman", "female", "mage", "witch"},
+	},
+	{
 		Name:     "speaking_head",
 		Category: "people",
 		Char:     "🗣",
-		Keywords: []string{"user", "person", "human"},
+		Keywords: []string{"user", "person", "human", "sing", "say", "talk"},
+	},
+	{
+		Name:     "star_struck",
+		Category: "people",
+		Char:     "🤩",
+		Keywords: []string{"face", "smile", "starry", "eyes", "grinning"},
 	},
 	{
 		Name:     "stuck_out_tongue",
@@ -1462,10 +1714,22 @@ var emojis = []*Emoji{
 		Keywords: []string{"face", "hot", "happy", "laugh", "sweat", "smile", "relief"},
 	},
 	{
+		Name:     "symbols_over_mouth",
+		Category: "people",
+		Char:     "🤬",
+		Keywords: []string{"face", "swearing", "cursing", "cussing", "profanity", "expletive"},
+	},
+	{
 		Name:     "thinking",
 		Category: "people",
 		Char:     "🤔",
 		Keywords: []string{"face", "hmmm", "think", "consider"},
+	},
+	{
+		Name:     "thread",
+		Category: "people",
+		Char:     "🧵",
+		Keywords: []string{"needle", "sewing", "spool", "string"},
 	},
 	{
 		Name:     "tipping_hand_man",
@@ -1490,6 +1754,12 @@ var emojis = []*Emoji{
 		Category: "people",
 		Char:     "👅",
 		Keywords: []string{"mouth", "playful"},
+	},
+	{
+		Name:     "tooth",
+		Category: "people",
+		Char:     "🦷",
+		Keywords: []string{"teeth", "dentist"},
 	},
 	{
 		Name:     "tophat",
@@ -1525,7 +1795,7 @@ var emojis = []*Emoji{
 		Name:     "unamused",
 		Category: "people",
 		Char:     "😒",
-		Keywords: []string{"indifference", "bored", "straight face", "serious", "sarcasm"},
+		Keywords: []string{"indifference", "bored", "straight face", "serious", "sarcasm", "unimpressed", "skeptical", "dubious", "side_eye"},
 	},
 	{
 		Name:     "upside_down_face",
@@ -1538,6 +1808,12 @@ var emojis = []*Emoji{
 		Category: "people",
 		Char:     "✌",
 		Keywords: []string{"fingers", "ohyeah", "hand", "peace", "victory", "two"},
+	},
+	{
+		Name:     "vomiting",
+		Category: "people",
+		Char:     "🤮",
+		Keywords: []string{"face", "sick"},
 	},
 	{
 		Name:     "vulcan_salute",
@@ -1561,7 +1837,7 @@ var emojis = []*Emoji{
 		Name:     "wave",
 		Category: "people",
 		Char:     "👋",
-		Keywords: []string{"hands", "gesture", "goodbye", "solong", "farewell", "hello", "palm"},
+		Keywords: []string{"hands", "gesture", "goodbye", "solong", "farewell", "hello", "hi", "palm"},
 	},
 	{
 		Name:     "weary",
@@ -1573,7 +1849,13 @@ var emojis = []*Emoji{
 		Name:     "wink",
 		Category: "people",
 		Char:     "😉",
-		Keywords: []string{"face", "happy", "mischievous", "secret", ";)", "smile"},
+		Keywords: []string{"face", "happy", "mischievous", "secret", ";)", "smile", "eye"},
+	},
+	{
+		Name:     "wizard",
+		Category: "people",
+		Char:     "🧙‍♂️",
+		Keywords: []string{"man", "male", "mage", "sorcerer"},
 	},
 	{
 		Name:     "woman",
@@ -1600,6 +1882,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"chef", "woman", "human"},
 	},
 	{
+		Name:     "woman_elf",
+		Category: "people",
+		Char:     "🧝‍♀️",
+		Keywords: []string{"woman", "female"},
+	},
+	{
 		Name:     "woman_facepalming",
 		Category: "people",
 		Char:     "🤦‍♀️",
@@ -1610,6 +1898,12 @@ var emojis = []*Emoji{
 		Category: "people",
 		Char:     "👩‍🏭",
 		Keywords: []string{"assembly", "industrial", "woman", "human"},
+	},
+	{
+		Name:     "woman_fairy",
+		Category: "people",
+		Char:     "🧚‍♀️",
+		Keywords: []string{"woman", "female"},
 	},
 	{
 		Name:     "woman_farmer",
@@ -1624,10 +1918,22 @@ var emojis = []*Emoji{
 		Keywords: []string{"fireman", "woman", "human"},
 	},
 	{
+		Name:     "woman_genie",
+		Category: "people",
+		Char:     "🧞‍♀️",
+		Keywords: []string{"woman", "female"},
+	},
+	{
 		Name:     "woman_health_worker",
 		Category: "people",
 		Char:     "👩‍⚕️",
 		Keywords: []string{"doctor", "nurse", "therapist", "healthcare", "woman", "human"},
+	},
+	{
+		Name:     "woman_in_steamy_room",
+		Category: "people",
+		Char:     "🧖‍♀️",
+		Keywords: []string{"female", "woman", "spa", "steamroom", "sauna"},
 	},
 	{
 		Name:     "woman_judge",
@@ -1639,7 +1945,7 @@ var emojis = []*Emoji{
 		Name:     "woman_mechanic",
 		Category: "people",
 		Char:     "👩‍🔧",
-		Keywords: []string{"plumber", "woman", "human"},
+		Keywords: []string{"plumber", "woman", "human", "wrench"},
 	},
 	{
 		Name:     "woman_office_worker",
@@ -1678,6 +1984,18 @@ var emojis = []*Emoji{
 		Keywords: []string{"graduate", "woman", "human"},
 	},
 	{
+		Name:     "woman_superhero",
+		Category: "people",
+		Char:     "🦸‍♀️",
+		Keywords: []string{"woman", "female", "good", "heroine", "superpowers"},
+	},
+	{
+		Name:     "woman_supervillain",
+		Category: "people",
+		Char:     "🦹‍♀️",
+		Keywords: []string{"woman", "female", "evil", "bad", "criminal", "heroine", "superpowers"},
+	},
+	{
 		Name:     "woman_teacher",
 		Category: "people",
 		Char:     "👩‍🏫",
@@ -1687,13 +2005,31 @@ var emojis = []*Emoji{
 		Name:     "woman_technologist",
 		Category: "people",
 		Char:     "👩‍💻",
-		Keywords: []string{"coder", "developer", "engineer", "programmer", "software", "woman", "human"},
+		Keywords: []string{"coder", "developer", "engineer", "programmer", "software", "woman", "human", "laptop", "computer"},
+	},
+	{
+		Name:     "woman_vampire",
+		Category: "people",
+		Char:     "🧛‍♀️",
+		Keywords: []string{"woman", "female"},
+	},
+	{
+		Name:     "woman_with_headscarf",
+		Category: "people",
+		Char:     "🧕",
+		Keywords: []string{"female", "hijab", "mantilla", "tichel"},
 	},
 	{
 		Name:     "woman_with_turban",
 		Category: "people",
 		Char:     "👳‍♀️",
 		Keywords: []string{"female", "indian", "hinduism", "arabs", "woman"},
+	},
+	{
+		Name:     "woman_zombie",
+		Category: "people",
+		Char:     "🧟‍♀️",
+		Keywords: []string{"woman", "female", "undead", "walking dead"},
 	},
 	{
 		Name:     "womans_clothes",
@@ -1708,6 +2044,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"fashion", "accessories", "female", "lady", "spring"},
 	},
 	{
+		Name:     "woozy",
+		Category: "people",
+		Char:     "🥴",
+		Keywords: []string{"face", "dizzy", "intoxicated", "tipsy", "wavy"},
+	},
+	{
 		Name:     "worried",
 		Category: "people",
 		Char:     "😟",
@@ -1717,13 +2059,25 @@ var emojis = []*Emoji{
 		Name:     "writing_hand",
 		Category: "people",
 		Char:     "✍",
-		Keywords: []string{"lower_left_ballpoint_pen", "stationery", "write"},
+		Keywords: []string{"lower_left_ballpoint_pen", "stationery", "write", "compose"},
+	},
+	{
+		Name:     "yarn",
+		Category: "people",
+		Char:     "🧶",
+		Keywords: []string{"ball", "crochet", "knit"},
 	},
 	{
 		Name:     "yum",
 		Category: "people",
 		Char:     "😋",
-		Keywords: []string{"happy", "joy", "tongue", "smile", "face", "silly", "yummy", "nom"},
+		Keywords: []string{"happy", "joy", "tongue", "smile", "face", "silly", "yummy", "nom", "delicious", "savouring"},
+	},
+	{
+		Name:     "zany",
+		Category: "people",
+		Char:     "🤪",
+		Keywords: []string{"face", "goofy", "crazy"},
 	},
 	{
 		Name:     "zipper_mouth_face",
@@ -1735,7 +2089,7 @@ var emojis = []*Emoji{
 		Name:     "zzz",
 		Category: "people",
 		Char:     "💤",
-		Keywords: []string{"sleepy", "tired"},
+		Keywords: []string{"sleepy", "tired", "dream"},
 	},
 	{
 		Name:     "ant",
@@ -1748,6 +2102,12 @@ var emojis = []*Emoji{
 		Category: "animals_and_nature",
 		Char:     "🐤",
 		Keywords: []string{"animal", "chicken", "bird"},
+	},
+	{
+		Name:     "badger",
+		Category: "animals_and_nature",
+		Char:     "🦡",
+		Keywords: []string{"animal", "nature", "honey"},
 	},
 	{
 		Name:     "bamboo",
@@ -2128,6 +2488,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"nature", "twilight", "planet", "space", "night", "evening", "sleep"},
 	},
 	{
+		Name:     "giraffe",
+		Category: "animals_and_nature",
+		Char:     "🦒",
+		Keywords: []string{"animal", "nature", "spots", "safari"},
+	},
+	{
 		Name:     "goat",
 		Category: "animals_and_nature",
 		Char:     "🐐",
@@ -2138,6 +2504,12 @@ var emojis = []*Emoji{
 		Category: "animals_and_nature",
 		Char:     "🦍",
 		Keywords: []string{"animal", "nature", "circus"},
+	},
+	{
+		Name:     "grasshopper",
+		Category: "animals_and_nature",
+		Char:     "🦗",
+		Keywords: []string{"animal", "cricket", "chirp"},
 	},
 	{
 		Name:     "hamster",
@@ -2164,6 +2536,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"animal", "monkey", "nature"},
 	},
 	{
+		Name:     "hedgehog",
+		Category: "animals_and_nature",
+		Char:     "🦔",
+		Keywords: []string{"animal", "nature", "spiny"},
+	},
+	{
 		Name:     "herb",
 		Category: "animals_and_nature",
 		Char:     "🌿",
@@ -2174,6 +2552,12 @@ var emojis = []*Emoji{
 		Category: "animals_and_nature",
 		Char:     "🌺",
 		Keywords: []string{"plant", "vegetable", "flowers", "beach"},
+	},
+	{
+		Name:     "hippopotamus",
+		Category: "animals_and_nature",
+		Char:     "🦛",
+		Keywords: []string{"animal", "nature"},
 	},
 	{
 		Name:     "honeybee",
@@ -2192,6 +2576,12 @@ var emojis = []*Emoji{
 		Category: "animals_and_nature",
 		Char:     "🎃",
 		Keywords: []string{"halloween", "light", "pumpkin", "creepy", "fall"},
+	},
+	{
+		Name:     "kangaroo",
+		Category: "animals_and_nature",
+		Char:     "🦘",
+		Keywords: []string{"animal", "nature", "australia", "joey", "hop", "marsupial"},
 	},
 	{
 		Name:     "koala",
@@ -2236,6 +2626,18 @@ var emojis = []*Emoji{
 		Keywords: []string{"animal", "nature", "reptile"},
 	},
 	{
+		Name:     "llama",
+		Category: "animals_and_nature",
+		Char:     "🦙",
+		Keywords: []string{"animal", "nature", "alpaca"},
+	},
+	{
+		Name:     "lobster",
+		Category: "animals_and_nature",
+		Char:     "🦞",
+		Keywords: []string{"animal", "nature", "bisque", "claws", "seafood"},
+	},
+	{
 		Name:     "maple_leaf",
 		Category: "animals_and_nature",
 		Char:     "🍁",
@@ -2252,6 +2654,12 @@ var emojis = []*Emoji{
 		Category: "animals_and_nature",
 		Char:     "🐵",
 		Keywords: []string{"animal", "nature", "circus"},
+	},
+	{
+		Name:     "mosquito",
+		Category: "animals_and_nature",
+		Char:     "🦟",
+		Keywords: []string{"animal", "nature", "insect", "malaria"},
 	},
 	{
 		Name:     "mouse",
@@ -2326,6 +2734,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"animal", "nature", "panda"},
 	},
 	{
+		Name:     "parrot",
+		Category: "animals_and_nature",
+		Char:     "🦜",
+		Keywords: []string{"animal", "nature", "bird", "pirate", "talk"},
+	},
+	{
 		Name:     "partly_sunny",
 		Category: "animals_and_nature",
 		Char:     "⛅",
@@ -2336,6 +2750,12 @@ var emojis = []*Emoji{
 		Category: "animals_and_nature",
 		Char:     "🐾",
 		Keywords: []string{"animal", "tracking", "footprints", "dog", "cat", "pet", "feet"},
+	},
+	{
+		Name:     "peacock",
+		Category: "animals_and_nature",
+		Char:     "🦚",
+		Keywords: []string{"animal", "nature", "peahen", "bird"},
 	},
 	{
 		Name:     "penguin",
@@ -2380,6 +2800,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"animal", "nature", "pet", "magic", "spring"},
 	},
 	{
+		Name:     "raccoon",
+		Category: "animals_and_nature",
+		Char:     "🦝",
+		Keywords: []string{"animal", "nature"},
+	},
+	{
 		Name:     "racehorse",
 		Category: "animals_and_nature",
 		Char:     "🐎",
@@ -2414,6 +2840,12 @@ var emojis = []*Emoji{
 		Category: "animals_and_nature",
 		Char:     "🌹",
 		Keywords: []string{"flowers", "valentines", "love", "spring"},
+	},
+	{
+		Name:     "sauropod",
+		Category: "animals_and_nature",
+		Char:     "🦕",
+		Keywords: []string{"animal", "nature", "dinosaur", "brachiosaurus", "brontosaurus", "diplodocus", "extinct"},
 	},
 	{
 		Name:     "scorpion",
@@ -2572,10 +3004,22 @@ var emojis = []*Emoji{
 		Keywords: []string{"weather", "nature", "brightness", "summer", "beach", "spring"},
 	},
 	{
+		Name:     "swan",
+		Category: "animals_and_nature",
+		Char:     "🦢",
+		Keywords: []string{"animal", "nature", "bird"},
+	},
+	{
 		Name:     "sweat_drops",
 		Category: "animals_and_nature",
 		Char:     "💦",
 		Keywords: []string{"water", "drip", "oops"},
+	},
+	{
+		Name:     "t-rex",
+		Category: "animals_and_nature",
+		Char:     "🦖",
+		Keywords: []string{"animal", "nature", "dinosaur", "tyrannosaurus", "extinct"},
 	},
 	{
 		Name:     "tanabata_tree",
@@ -2704,6 +3148,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"thunder", "weather", "lightning bolt", "fast"},
 	},
 	{
+		Name:     "zebra",
+		Category: "animals_and_nature",
+		Char:     "🦓",
+		Keywords: []string{"animal", "nature", "stripes", "safari"},
+	},
+	{
 		Name:     "apple",
 		Category: "food_and_drink",
 		Char:     "🍎",
@@ -2726,6 +3176,12 @@ var emojis = []*Emoji{
 		Category: "food_and_drink",
 		Char:     "🥓",
 		Keywords: []string{"food", "breakfast", "pork", "pig", "meat"},
+	},
+	{
+		Name:     "bagel",
+		Category: "food_and_drink",
+		Char:     "🥯",
+		Keywords: []string{"food", "bread", "bakery", "schmear"},
 	},
 	{
 		Name:     "baguette_bread",
@@ -2764,10 +3220,28 @@ var emojis = []*Emoji{
 		Keywords: []string{"food", "dessert", "cake"},
 	},
 	{
+		Name:     "bone",
+		Category: "food_and_drink",
+		Char:     "🦴",
+		Keywords: []string{"skeleton"},
+	},
+	{
+		Name:     "bowl_with_spoon",
+		Category: "food_and_drink",
+		Char:     "🥣",
+		Keywords: []string{"food", "breakfast", "cereal", "oatmeal", "porridge"},
+	},
+	{
 		Name:     "bread",
 		Category: "food_and_drink",
 		Char:     "🍞",
 		Keywords: []string{"food", "wheat", "breakfast", "toast"},
+	},
+	{
+		Name:     "broccoli",
+		Category: "food_and_drink",
+		Char:     "🥦",
+		Keywords: []string{"fruit", "food", "vegetable"},
 	},
 	{
 		Name:     "burrito",
@@ -2786,6 +3260,12 @@ var emojis = []*Emoji{
 		Category: "food_and_drink",
 		Char:     "🍬",
 		Keywords: []string{"snack", "dessert", "sweet", "lolly"},
+	},
+	{
+		Name:     "canned_food",
+		Category: "food_and_drink",
+		Char:     "🥫",
+		Keywords: []string{"food", "soup"},
 	},
 	{
 		Name:     "carrot",
@@ -2818,16 +3298,28 @@ var emojis = []*Emoji{
 		Keywords: []string{"food", "snack", "dessert", "sweet"},
 	},
 	{
+		Name:     "chopsticks",
+		Category: "food_and_drink",
+		Char:     "🥢",
+		Keywords: []string{"food"},
+	},
+	{
 		Name:     "clinking_glasses",
 		Category: "food_and_drink",
 		Char:     "🥂",
-		Keywords: []string{"beverage", "drink", "party", "alcohol", "celebrate", "cheers"},
+		Keywords: []string{"beverage", "drink", "party", "alcohol", "celebrate", "cheers", "wine", "champagne", "toast"},
 	},
 	{
 		Name:     "cocktail",
 		Category: "food_and_drink",
 		Char:     "🍸",
 		Keywords: []string{"drink", "drunk", "alcohol", "beverage", "booze", "mojito"},
+	},
+	{
+		Name:     "coconut",
+		Category: "food_and_drink",
+		Char:     "🥥",
+		Keywords: []string{"fruit", "nature", "food", "palm"},
 	},
 	{
 		Name:     "coffee",
@@ -2860,6 +3352,18 @@ var emojis = []*Emoji{
 		Keywords: []string{"fruit", "food", "pickle"},
 	},
 	{
+		Name:     "cup_with_straw",
+		Category: "food_and_drink",
+		Char:     "🥤",
+		Keywords: []string{"drink", "soda"},
+	},
+	{
+		Name:     "cupcake",
+		Category: "food_and_drink",
+		Char:     "🧁",
+		Keywords: []string{"food", "dessert", "bakery", "sweet"},
+	},
+	{
 		Name:     "curry",
 		Category: "food_and_drink",
 		Char:     "🍛",
@@ -2884,6 +3388,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"food", "dessert", "snack", "sweet", "donut"},
 	},
 	{
+		Name:     "dumpling",
+		Category: "food_and_drink",
+		Char:     "🥟",
+		Keywords: []string{"food", "empanada", "pierogi", "potsticker"},
+	},
+	{
 		Name:     "egg",
 		Category: "food_and_drink",
 		Char:     "🥚",
@@ -2899,13 +3409,19 @@ var emojis = []*Emoji{
 		Name:     "fish_cake",
 		Category: "food_and_drink",
 		Char:     "🍥",
-		Keywords: []string{"food", "japan", "sea", "beach"},
+		Keywords: []string{"food", "japan", "sea", "beach", "narutomaki", "pink", "swirl", "kamaboko", "surimi", "ramen"},
 	},
 	{
 		Name:     "fork_and_knife",
 		Category: "food_and_drink",
 		Char:     "🍴",
 		Keywords: []string{"cutlery", "kitchen"},
+	},
+	{
+		Name:     "fortune_cookie",
+		Category: "food_and_drink",
+		Char:     "🥠",
+		Keywords: []string{"food", "prophecy"},
 	},
 	{
 		Name:     "fried_egg",
@@ -2986,6 +3502,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"fruit", "food"},
 	},
 	{
+		Name:     "leafy_greens",
+		Category: "food_and_drink",
+		Char:     "🥬",
+		Keywords: []string{"food", "vegetable", "plant", "bok choy", "cabbage", "kale", "lettuce"},
+	},
+	{
 		Name:     "lemon",
 		Category: "food_and_drink",
 		Char:     "🍋",
@@ -2996,6 +3518,12 @@ var emojis = []*Emoji{
 		Category: "food_and_drink",
 		Char:     "🍭",
 		Keywords: []string{"food", "snack", "candy", "sweet"},
+	},
+	{
+		Name:     "mango",
+		Category: "food_and_drink",
+		Char:     "🥭",
+		Keywords: []string{"fruit", "food", "tropical"},
 	},
 	{
 		Name:     "meat_on_bone",
@@ -3014,6 +3542,12 @@ var emojis = []*Emoji{
 		Category: "food_and_drink",
 		Char:     "🥛",
 		Keywords: []string{"beverage", "drink", "cow"},
+	},
+	{
+		Name:     "moon_cake",
+		Category: "food_and_drink",
+		Char:     "🥮",
+		Keywords: []string{"food", "autumn"},
 	},
 	{
 		Name:     "oden",
@@ -3044,6 +3578,12 @@ var emojis = []*Emoji{
 		Category: "food_and_drink",
 		Char:     "🍐",
 		Keywords: []string{"fruit", "nature", "food"},
+	},
+	{
+		Name:     "pie",
+		Category: "food_and_drink",
+		Char:     "🥧",
+		Keywords: []string{"food", "dessert", "pastry"},
 	},
 	{
 		Name:     "pineapple",
@@ -3082,6 +3622,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"food", "meat", "drumstick", "bird", "chicken", "turkey"},
 	},
 	{
+		Name:     "pretzel",
+		Category: "food_and_drink",
+		Char:     "🥨",
+		Keywords: []string{"food", "bread", "twisted"},
+	},
+	{
 		Name:     "ramen",
 		Category: "food_and_drink",
 		Char:     "🍜",
@@ -3112,6 +3658,18 @@ var emojis = []*Emoji{
 		Keywords: []string{"wine", "drink", "drunk", "beverage", "japanese", "alcohol", "booze"},
 	},
 	{
+		Name:     "salt",
+		Category: "food_and_drink",
+		Char:     "🧂",
+		Keywords: []string{"condiment", "shaker"},
+	},
+	{
+		Name:     "sandwich",
+		Category: "food_and_drink",
+		Char:     "🥪",
+		Keywords: []string{"food", "lunch", "bread"},
+	},
+	{
 		Name:     "shallow_pan_of_food",
 		Category: "food_and_drink",
 		Char:     "🥘",
@@ -3134,6 +3692,12 @@ var emojis = []*Emoji{
 		Category: "food_and_drink",
 		Char:     "🥄",
 		Keywords: []string{"cutlery", "kitchen", "tableware"},
+	},
+	{
+		Name:     "steak",
+		Category: "food_and_drink",
+		Char:     "🥩",
+		Keywords: []string{"food", "cow", "meat", "cut", "chop", "lambchop", "porkchop"},
 	},
 	{
 		Name:     "stew",
@@ -3170,6 +3734,12 @@ var emojis = []*Emoji{
 		Category: "food_and_drink",
 		Char:     "🌮",
 		Keywords: []string{"food", "mexican"},
+	},
+	{
+		Name:     "takeout_box",
+		Category: "food_and_drink",
+		Char:     "🥡",
+		Keywords: []string{"food", "leftovers"},
 	},
 	{
 		Name:     "tangerine",
@@ -3316,6 +3886,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"suit", "business", "levitate", "hover", "jump"},
 	},
 	{
+		Name:     "chess_pawn",
+		Category: "activity",
+		Char:     "♟",
+		Keywords: []string{"expendable"},
+	},
+	{
 		Name:     "circus_tent",
 		Category: "activity",
 		Char:     "🎪",
@@ -3328,22 +3904,40 @@ var emojis = []*Emoji{
 		Keywords: []string{"movie", "film", "record"},
 	},
 	{
+		Name:     "climbing_man",
+		Category: "activity",
+		Char:     "🧗‍♂️",
+		Keywords: []string{"sports", "hobby", "man", "male", "rock"},
+	},
+	{
+		Name:     "climbing_woman",
+		Category: "activity",
+		Char:     "🧗‍♀️",
+		Keywords: []string{"sports", "hobby", "woman", "female", "rock"},
+	},
+	{
 		Name:     "cricket",
 		Category: "activity",
 		Char:     "🏏",
 		Keywords: []string{"sports"},
 	},
 	{
+		Name:     "curling_stone",
+		Category: "activity",
+		Char:     "🥌",
+		Keywords: []string{"sports"},
+	},
+	{
 		Name:     "dart",
 		Category: "activity",
 		Char:     "🎯",
-		Keywords: []string{"game", "play", "bar"},
+		Keywords: []string{"game", "play", "bar", "target", "bullseye"},
 	},
 	{
 		Name:     "drum",
 		Category: "activity",
 		Char:     "🥁",
-		Keywords: []string{"music", "instrument", "drumsticks"},
+		Keywords: []string{"music", "instrument", "drumsticks", "snare"},
 	},
 	{
 		Name:     "field_hockey",
@@ -3356,6 +3950,12 @@ var emojis = []*Emoji{
 		Category: "activity",
 		Char:     "🎣",
 		Keywords: []string{"food", "hobby", "summer"},
+	},
+	{
+		Name:     "flying_disc",
+		Category: "activity",
+		Char:     "🥏",
+		Keywords: []string{"sports", "frisbee", "ultimate"},
 	},
 	{
 		Name:     "football",
@@ -3424,10 +4024,28 @@ var emojis = []*Emoji{
 		Keywords: []string{"sports"},
 	},
 	{
+		Name:     "jigsaw",
+		Category: "activity",
+		Char:     "🧩",
+		Keywords: []string{"interlocking", "puzzle", "piece"},
+	},
+	{
+		Name:     "lacrosse",
+		Category: "activity",
+		Char:     "🥍",
+		Keywords: []string{"sports", "ball", "stick"},
+	},
+	{
 		Name:     "man_cartwheeling",
 		Category: "activity",
 		Char:     "🤸‍♂️",
 		Keywords: []string{"gymnastics"},
+	},
+	{
+		Name:     "man_in_lotus_position",
+		Category: "activity",
+		Char:     "🧘‍♂️",
+		Keywords: []string{"man", "male", "meditation", "yoga", "serenity", "zen", "mindfulness"},
 	},
 	{
 		Name:     "man_juggling",
@@ -3475,7 +4093,7 @@ var emojis = []*Emoji{
 		Name:     "microphone",
 		Category: "activity",
 		Char:     "🎤",
-		Keywords: []string{"sound", "music", "PA"},
+		Keywords: []string{"sound", "music", "PA", "sing", "talkshow"},
 	},
 	{
 		Name:     "mountain_biking_man",
@@ -3493,13 +4111,13 @@ var emojis = []*Emoji{
 		Name:     "musical_keyboard",
 		Category: "activity",
 		Char:     "🎹",
-		Keywords: []string{"piano", "instrument"},
+		Keywords: []string{"piano", "instrument", "compose"},
 	},
 	{
 		Name:     "musical_score",
 		Category: "activity",
 		Char:     "🎼",
-		Keywords: []string{"treble", "clef"},
+		Keywords: []string{"treble", "clef", "compose"},
 	},
 	{
 		Name:     "performing_arts",
@@ -3562,6 +4180,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"music", "instrument", "jazz", "blues"},
 	},
 	{
+		Name:     "skateboard",
+		Category: "activity",
+		Char:     "🛹",
+		Keywords: []string{"board"},
+	},
+	{
 		Name:     "ski",
 		Category: "activity",
 		Char:     "🎿",
@@ -3572,6 +4196,12 @@ var emojis = []*Emoji{
 		Category: "activity",
 		Char:     "⛷",
 		Keywords: []string{"sports", "winter", "snow"},
+	},
+	{
+		Name:     "sled",
+		Category: "activity",
+		Char:     "🛷",
+		Keywords: []string{"sleigh", "luge", "toboggan"},
 	},
 	{
 		Name:     "slot_machine",
@@ -3590,6 +4220,12 @@ var emojis = []*Emoji{
 		Category: "activity",
 		Char:     "⚽",
 		Keywords: []string{"sports", "football"},
+	},
+	{
+		Name:     "softball",
+		Category: "activity",
+		Char:     "🥎",
+		Keywords: []string{"sports", "balls"},
 	},
 	{
 		Name:     "space_invader",
@@ -3686,6 +4322,12 @@ var emojis = []*Emoji{
 		Category: "activity",
 		Char:     "🤸‍♀️",
 		Keywords: []string{"gymnastics"},
+	},
+	{
+		Name:     "woman_in_lotus_position",
+		Category: "activity",
+		Char:     "🧘‍♀️",
+		Keywords: []string{"woman", "female", "meditation", "yoga", "serenity", "zen", "mindfulness"},
 	},
 	{
 		Name:     "woman_juggling",
@@ -3952,6 +4594,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"airport", "flight", "landing"},
 	},
 	{
+		Name:     "flying_saucer",
+		Category: "travel_and_places",
+		Char:     "🛸",
+		Keywords: []string{"transportation", "vehicle", "ufo"},
+	},
+	{
 		Name:     "foggy",
 		Category: "travel_and_places",
 		Char:     "🌁",
@@ -3985,7 +4633,7 @@ var emojis = []*Emoji{
 		Name:     "hotel",
 		Category: "travel_and_places",
 		Char:     "🏨",
-		Keywords: []string{"building", "accommodation", "checkin"},
+		Keywords: []string{"building", "accomodation", "checkin"},
 	},
 	{
 		Name:     "house",
@@ -4420,6 +5068,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"love", "like", "affection", "couple", "marriage", "bride", "groom"},
 	},
 	{
+		Name:     "abacus",
+		Category: "objects",
+		Char:     "🧮",
+		Keywords: []string{"calculation"},
+	},
+	{
 		Name:     "alarm_clock",
 		Category: "objects",
 		Char:     "⏰",
@@ -4429,7 +5083,7 @@ var emojis = []*Emoji{
 		Name:     "alembic",
 		Category: "objects",
 		Char:     "⚗",
-		Keywords: []string{"distilling", "science", "experiment"},
+		Keywords: []string{"distilling", "science", "experiment", "chemistry"},
 	},
 	{
 		Name:     "amphora",
@@ -4466,6 +5120,12 @@ var emojis = []*Emoji{
 		Category: "objects",
 		Char:     "💈",
 		Keywords: []string{"hair", "salon", "style"},
+	},
+	{
+		Name:     "basket",
+		Category: "objects",
+		Char:     "🧺",
+		Keywords: []string{"laundry"},
 	},
 	{
 		Name:     "bathtub",
@@ -4532,6 +5192,18 @@ var emojis = []*Emoji{
 		Category: "objects",
 		Char:     "📚",
 		Keywords: []string{"literature", "library", "study"},
+	},
+	{
+		Name:     "brick",
+		Category: "objects",
+		Char:     "🧱",
+		Keywords: []string{"bricks"},
+	},
+	{
+		Name:     "broom",
+		Category: "objects",
+		Char:     "🧹",
+		Keywords: []string{"cleaning", "sweeping", "witch"},
 	},
 	{
 		Name:     "bulb",
@@ -4639,7 +5311,13 @@ var emojis = []*Emoji{
 		Name:     "coffin",
 		Category: "objects",
 		Char:     "⚰",
-		Keywords: []string{"vampire", "dead", "die", "death", "rip", "graveyard", "cemetery"},
+		Keywords: []string{"vampire", "dead", "die", "death", "rip", "graveyard", "cemetery", "casket", "funeral", "box"},
+	},
+	{
+		Name:     "compass",
+		Category: "objects",
+		Char:     "🧭",
+		Keywords: []string{"magnetic", "navigation", "orienteering"},
 	},
 	{
 		Name:     "computer",
@@ -4718,6 +5396,12 @@ var emojis = []*Emoji{
 		Category: "objects",
 		Char:     "🖥",
 		Keywords: []string{"technology", "computing", "screen"},
+	},
+	{
+		Name:     "dna",
+		Category: "objects",
+		Char:     "🧬",
+		Keywords: []string{"biologist", "genetics", "life"},
 	},
 	{
 		Name:     "dollar",
@@ -4802,6 +5486,18 @@ var emojis = []*Emoji{
 		Category: "objects",
 		Char:     "🎞",
 		Keywords: []string{"movie"},
+	},
+	{
+		Name:     "fire_extinguisher",
+		Category: "objects",
+		Char:     "🧯",
+		Keywords: []string{"quench"},
+	},
+	{
+		Name:     "firecracker",
+		Category: "objects",
+		Char:     "🧨",
+		Keywords: []string{"dynamite", "boom", "explode", "explosion", "explosive"},
 	},
 	{
 		Name:     "flags",
@@ -4990,6 +5686,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"security", "secret"},
 	},
 	{
+		Name:     "lotion_bottle",
+		Category: "objects",
+		Char:     "🧴",
+		Keywords: []string{"moisturizer", "sunscreen"},
+	},
+	{
 		Name:     "love_letter",
 		Category: "objects",
 		Char:     "💌",
@@ -5006,6 +5708,12 @@ var emojis = []*Emoji{
 		Category: "objects",
 		Char:     "🔎",
 		Keywords: []string{"search", "zoom", "find", "detective"},
+	},
+	{
+		Name:     "magnet",
+		Category: "objects",
+		Char:     "🧲",
+		Keywords: []string{"attraction", "magnetic"},
 	},
 	{
 		Name:     "mailbox",
@@ -5041,7 +5749,13 @@ var emojis = []*Emoji{
 		Name:     "memo",
 		Category: "objects",
 		Char:     "📝",
-		Keywords: []string{"write", "documents", "stationery", "pencil", "paper", "writing", "legal", "exam", "quiz", "test", "study"},
+		Keywords: []string{"write", "documents", "stationery", "pencil", "paper", "writing", "legal", "exam", "quiz", "test", "study", "compose"},
+	},
+	{
+		Name:     "microbe",
+		Category: "objects",
+		Char:     "🦠",
+		Keywords: []string{"amoeba", "bacteria", "germs"},
 	},
 	{
 		Name:     "microscope",
@@ -5078,6 +5792,12 @@ var emojis = []*Emoji{
 		Category: "objects",
 		Char:     "🗿",
 		Keywords: []string{"rock", "easter island", "moai"},
+	},
+	{
+		Name:     "nazar_amulet",
+		Category: "objects",
+		Char:     "🧿",
+		Keywords: []string{"bead", "charm"},
 	},
 	{
 		Name:     "newspaper",
@@ -5206,6 +5926,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"stationery", "write", "paper", "writing", "school", "study"},
 	},
 	{
+		Name:     "petri_dish",
+		Category: "objects",
+		Char:     "🧫",
+		Keywords: []string{"bacteria", "biology", "culture", "lab"},
+	},
+	{
 		Name:     "phone",
 		Category: "objects",
 		Char:     "☎️",
@@ -5269,7 +5995,19 @@ var emojis = []*Emoji{
 		Name:     "rainbow_flag",
 		Category: "objects",
 		Char:     "🏳️‍🌈",
-		Keywords: []string{"flag", "rainbow"},
+		Keywords: []string{"flag", "rainbow", "pride", "gay", "lgbt", "glbt", "queer", "homosexual", "lesbian", "bisexual", "transgender"},
+	},
+	{
+		Name:     "receipt",
+		Category: "objects",
+		Char:     "🧾",
+		Keywords: []string{"accounting", "expenses"},
+	},
+	{
+		Name:     "red_envelope",
+		Category: "objects",
+		Char:     "🧧",
+		Keywords: []string{"gift"},
 	},
 	{
 		Name:     "ribbon",
@@ -5282,6 +6020,12 @@ var emojis = []*Emoji{
 		Category: "objects",
 		Char:     "📍",
 		Keywords: []string{"stationery", "location", "map", "here"},
+	},
+	{
+		Name:     "safety_pin",
+		Category: "objects",
+		Char:     "🧷",
+		Keywords: []string{"diaper"},
 	},
 	{
 		Name:     "satellite",
@@ -5329,7 +6073,7 @@ var emojis = []*Emoji{
 		Name:     "skull_and_crossbones",
 		Category: "objects",
 		Char:     "☠",
-		Keywords: []string{"poison", "danger", "deadly", "scary"},
+		Keywords: []string{"poison", "danger", "deadly", "scary", "death", "pirate", "evil"},
 	},
 	{
 		Name:     "sleeping_bed",
@@ -5344,6 +6088,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"kills", "tobacco", "cigarette", "joint", "smoke"},
 	},
 	{
+		Name:     "soap",
+		Category: "objects",
+		Char:     "🧼",
+		Keywords: []string{"bar", "bathing", "cleaning", "lather"},
+	},
+	{
 		Name:     "spiral_calendar",
 		Category: "objects",
 		Char:     "🗓",
@@ -5354,6 +6104,12 @@ var emojis = []*Emoji{
 		Category: "objects",
 		Char:     "🗒",
 		Keywords: []string{"memo", "stationery"},
+	},
+	{
+		Name:     "sponge",
+		Category: "objects",
+		Char:     "🧽",
+		Keywords: []string{"absorbing", "cleaning", "porous"},
 	},
 	{
 		Name:     "stopwatch",
@@ -5371,7 +6127,7 @@ var emojis = []*Emoji{
 		Name:     "studio_microphone",
 		Category: "objects",
 		Char:     "🎙",
-		Keywords: []string{"singer", "recording", "artist"},
+		Keywords: []string{"sing", "recording", "artist", "talkshow"},
 	},
 	{
 		Name:     "syringe",
@@ -5383,7 +6139,13 @@ var emojis = []*Emoji{
 		Name:     "tada",
 		Category: "objects",
 		Char:     "🎉",
-		Keywords: []string{"party", "contulations", "birthday", "magic", "circus"},
+		Keywords: []string{"party", "congratulations", "birthday", "magic", "circus", "celebration"},
+	},
+	{
+		Name:     "teddy_bear",
+		Category: "objects",
+		Char:     "🧸",
+		Keywords: []string{"plush", "stuffed"},
 	},
 	{
 		Name:     "telephone_receiver",
@@ -5395,7 +6157,13 @@ var emojis = []*Emoji{
 		Name:     "telescope",
 		Category: "objects",
 		Char:     "🔭",
-		Keywords: []string{"stars", "space", "zoom"},
+		Keywords: []string{"stars", "space", "zoom", "science", "astronomy"},
+	},
+	{
+		Name:     "test_tube",
+		Category: "objects",
+		Char:     "🧪",
+		Keywords: []string{"chemistry", "experiment", "lab", "science"},
 	},
 	{
 		Name:     "thermometer",
@@ -5414,6 +6182,18 @@ var emojis = []*Emoji{
 		Category: "objects",
 		Char:     "🚽",
 		Keywords: []string{"restroom", "wc", "washroom", "bathroom", "potty"},
+	},
+	{
+		Name:     "toilet_paper",
+		Category: "objects",
+		Char:     "🧻",
+		Keywords: []string{"roll"},
+	},
+	{
+		Name:     "toolbox",
+		Category: "objects",
+		Char:     "🧰",
+		Keywords: []string{"tools", "diy", "fix", "maintainer", "mechanic"},
 	},
 	{
 		Name:     "trackball",
@@ -5695,7 +6475,7 @@ var emojis = []*Emoji{
 		Name:     "atom_symbol",
 		Category: "symbols",
 		Char:     "⚛",
-		Keywords: []string{"science"},
+		Keywords: []string{"science", "physics", "chemistry"},
 	},
 	{
 		Name:     "b",
@@ -5725,7 +6505,7 @@ var emojis = []*Emoji{
 		Name:     "ballot_box_with_check",
 		Category: "symbols",
 		Char:     "☑️",
-		Keywords: []string{"ok", "agree", "confirm", "black-square", "vote", "election", "yes"},
+		Keywords: []string{"ok", "agree", "confirm", "black-square", "vote", "election", "yes", "tick"},
 	},
 	{
 		Name:     "bangbang",
@@ -6049,7 +6829,7 @@ var emojis = []*Emoji{
 		Name:     "cyclone",
 		Category: "symbols",
 		Char:     "🌀",
-		Keywords: []string{"weather", "swirl", "blue", "cloud", "vortex", "spiral", "whirlpool", "spin"},
+		Keywords: []string{"weather", "swirl", "blue", "cloud", "vortex", "spiral", "whirlpool", "spin", "tornado", "hurricane", "typhoon"},
 	},
 	{
 		Name:     "diamond_shape_with_a_dot_inside",
@@ -6086,6 +6866,12 @@ var emojis = []*Emoji{
 		Category: "symbols",
 		Char:     "✳️",
 		Keywords: []string{"star", "sparkle", "green-square"},
+	},
+	{
+		Name:     "eject_button",
+		Category: "symbols",
+		Char:     "⏏️",
+		Keywords: []string{"blue-square"},
 	},
 	{
 		Name:     "end",
@@ -6274,6 +7060,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"chinese", "kanji", "obtain", "get", "circle"},
 	},
 	{
+		Name:     "infinity",
+		Category: "symbols",
+		Char:     "♾",
+		Keywords: []string{"forever"},
+	},
+	{
 		Name:     "information_source",
 		Category: "symbols",
 		Char:     "ℹ️",
@@ -6332,6 +7124,12 @@ var emojis = []*Emoji{
 		Category: "symbols",
 		Char:     "↔️",
 		Keywords: []string{"shape", "direction", "horizontal", "sideways"},
+	},
+	{
+		Name:     "left_speech_bubble",
+		Category: "symbols",
+		Char:     "🗨",
+		Keywords: []string{"words", "message", "talk", "chatting"},
 	},
 	{
 		Name:     "leftwards_arrow_with_hook",
@@ -6554,6 +7352,12 @@ var emojis = []*Emoji{
 		Category: "symbols",
 		Char:     "⛎",
 		Keywords: []string{"sign", "purple-square", "constellation", "astrology"},
+	},
+	{
+		Name:     "orange_heart",
+		Category: "symbols",
+		Char:     "🧡",
+		Keywords: []string{"love", "like", "affection", "valentines"},
 	},
 	{
 		Name:     "orthodox_cross",
@@ -6871,7 +7675,7 @@ var emojis = []*Emoji{
 		Name:     "thought_balloon",
 		Category: "symbols",
 		Char:     "💭",
-		Keywords: []string{"bubble", "cloud", "speech", "thinking"},
+		Keywords: []string{"bubble", "cloud", "speech", "thinking", "dream"},
 	},
 	{
 		Name:     "three",
@@ -7045,7 +7849,7 @@ var emojis = []*Emoji{
 		Name:     "white_check_mark",
 		Category: "symbols",
 		Char:     "✅",
-		Keywords: []string{"green-square", "ok", "agree", "vote", "election", "answer"},
+		Keywords: []string{"green-square", "ok", "agree", "vote", "election", "answer", "tick"},
 	},
 	{
 		Name:     "white_circle",
@@ -7099,7 +7903,7 @@ var emojis = []*Emoji{
 		Name:     "x",
 		Category: "symbols",
 		Char:     "❌",
-		Keywords: []string{"no", "delete", "remove", "cancel"},
+		Keywords: []string{"no", "delete", "remove", "cancel", "red"},
 	},
 	{
 		Name:     "yellow_heart",
@@ -7532,6 +8336,12 @@ var emojis = []*Emoji{
 		Category: "flags",
 		Char:     "🇸🇻",
 		Keywords: []string{"el", "salvador", "flag", "nation", "country", "banner"},
+	},
+	{
+		Name:     "england",
+		Category: "flags",
+		Char:     "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+		Keywords: []string{"flag", "english"},
 	},
 	{
 		Name:     "equatorial_guinea",
@@ -8182,6 +8992,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"ph", "flag", "nation", "country", "banner"},
 	},
 	{
+		Name:     "pirate_flag",
+		Category: "flags",
+		Char:     "🏴‍☠️",
+		Keywords: []string{"skull", "crossbones", "flag", "banner"},
+	},
+	{
 		Name:     "pitcairn_islands",
 		Category: "flags",
 		Char:     "🇵🇳",
@@ -8258,6 +9074,12 @@ var emojis = []*Emoji{
 		Category: "flags",
 		Char:     "🇸🇦",
 		Keywords: []string{"flag", "nation", "country", "banner"},
+	},
+	{
+		Name:     "scotland",
+		Category: "flags",
+		Char:     "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+		Keywords: []string{"flag", "scottish"},
 	},
 	{
 		Name:     "senegal",
@@ -8524,6 +9346,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"united", "arab", "emirates", "flag", "nation", "country", "banner"},
 	},
 	{
+		Name:     "united_nations",
+		Category: "flags",
+		Char:     "🇺🇳",
+		Keywords: []string{"un", "flag", "banner"},
+	},
+	{
 		Name:     "uruguay",
 		Category: "flags",
 		Char:     "🇺🇾",
@@ -8572,6 +9400,12 @@ var emojis = []*Emoji{
 		Keywords: []string{"viet", "nam", "flag", "nation", "country", "banner"},
 	},
 	{
+		Name:     "wales",
+		Category: "flags",
+		Char:     "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+		Keywords: []string{"flag", "welsh"},
+	},
+	{
 		Name:     "wallis_futuna",
 		Category: "flags",
 		Char:     "🇼🇫",
@@ -8600,5 +9434,4 @@ var emojis = []*Emoji{
 		Category: "flags",
 		Char:     "🇿🇼",
 		Keywords: []string{"zw", "flag", "nation", "country", "banner"},
-	},
-}
+	}}

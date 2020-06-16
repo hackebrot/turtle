@@ -1,6 +1,6 @@
 # turtle
 
-CLI for the [turtle library][library] 😄 🐢 💻
+CLI for the [turtle library][library] 😄🐢💻
 
 ## Installation
 
@@ -12,21 +12,23 @@ CLI for the [turtle library][library] 😄 🐢 💻
 Print the emoji with the specified name identifier
 
 Usage:
-  turtle [flags]
+  turtle [NAME] [flags]
   turtle [command]
 
 Available Commands:
   category    Print all emojis of the category
+  char        Print the emoji for the emoji character
   help        Help about any command
   keyword     Print all emojis with the keyword
   list        Print a list of values from the turtle library
+  random      Print a random emoji
   search      Print emojis with a name that contains the search string
-  version     Print the version number of turtle
 
 Flags:
   -h, --help            help for turtle
   -i, --indent string   indent for JSON output
   -p, --prefix string   prefix for JSON output
+  -v, --version         version for turtle
 
 Use "turtle [command] --help" for more information about a command.
 ```
@@ -93,6 +95,28 @@ turtle -i "  " search computer
     ]
   }
 ]
+```
+
+### Char
+
+```bash
+turtle -i "  " char 🐝
+```
+
+```json
+{
+  "name": "honeybee",
+  "category": "animals_and_nature",
+  "char": "🐝",
+  "keywords": [
+    "animal",
+    "insect",
+    "nature",
+    "bug",
+    "spring",
+    "honey"
+  ]
+}
 ```
 
 ### Category
@@ -186,6 +210,29 @@ turtle -i "  " keyword happy
     ]
   }
 ]
+```
+
+### Random
+
+```bash
+turtle -i "  " random
+```
+
+```json
+{
+  "name": "woman_technologist",
+  "category": "people",
+  "char": "👩‍💻",
+  "keywords": [
+    "coder",
+    "developer",
+    "engineer",
+    "programmer",
+    "software",
+    "woman",
+    "human"
+  ]
+}
 ```
 
 ### List names, categories, keywords

@@ -63,7 +63,6 @@ func TestRunList(t *testing.T) {
 	tests := []cmdTestCase{{
 		name:      "show help for missing subcommand",
 		args:      []string{"list"},
-		outFile:   "list/help.txt",
 		wantError: false,
 	}, {
 		name:      "categories",
